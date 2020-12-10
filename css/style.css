@@ -1,0 +1,34 @@
+/* Header Section */
+.intro {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(../img/header/laposada_background.jpg) center center no-repeat;
+	background-color: #e5e5e5;
+	background-size: cover;
+}
+.intro .overlay {
+	background: rgba(0,0,0,0.4);
+}
+.intro h1 {
+	font-family: 'Rochester', cursive;
+	color: #fff;
+	font-size: 10em;
+	font-weight: 400;
+	margin-top: 0;
+}
+.intro span {
+	color: #a7c44c;
+	font-weight: 600;
+}
+.intro p {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 400;
+	margin-top: 150px;
+}
+header .intro-text {
+	padding-top: 200px;
+	padding-bottom: 50px;
+	text-align: center;
+}
