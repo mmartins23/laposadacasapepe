@@ -17,10 +17,6 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-image: url(/img/laposada-fish-background.jpeg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
 }
 
 .container {
@@ -141,6 +137,13 @@ header .navigation li a:hover {
 section {
     padding: 100px;
 }
+
+/* .historia, .comida, .equipo {
+    background-image: url(/img/laposada-fish-background.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+} */
 
 .row {
     position: relative;
