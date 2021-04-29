@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
+/* CSS RESET*/
 * {
     margin: 0;
     padding: 0;
@@ -7,22 +8,35 @@
     font-family:'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+/* END OF CSS RESET*/
 
-p {
-    font-weight: 300;
-    color: #111;
-}
-
+/* GENERAL STYLES*/
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    min-width: 400px;
+}
+p {
+    font-weight: 300;
+    color: #686868;
+}
+h2 {
+    font-weight: 400;
+    font-size: 38px;
+	color: #333;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
-.container {
-    flex: 1;    /* same as flex-grow: 1; */
-}
 
+/* END OF GENERAL STYLES*/
+
+/* BANNER */
 .banner {
     position: relative;
     width: 100%;
@@ -31,24 +45,20 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(22, 22, 22, 0.5) 0%, rgba(22, 22, 22, 0.5) 100%),
-        url('/img/laposada_background.jpeg') center center/cover no-repeat scroll;
+        url("/img/laposada_background.jpeg") center center/cover no-repeat scroll;
 }
-
 .banner .content {
     max-width: 900px;
     text-align: center;
 }
-
-.banner .content h2 {
-    font-size: 5em;
+.banner .content h1 {
+    font-size: 4em;
     color: #fff;
 }
-
 .banner .content p {
     font-size: 1em;
     color: #fff;
 }
-
 .btn-crt {
     font-size: 1em;
     color: #fff;
@@ -62,6 +72,11 @@ body {
     transition: 0.5s;
     margin-left: 30px;
     border-radius: 3px;
+}
+.btn-crt:hover {
+    color: #fff;
+    border: #ff0157 1px solid;
+    background: transparent;
 }
 
 .btn-rsv {
@@ -78,9 +93,14 @@ body {
     margin-left: 30px;
     border-radius: 3px;
 }
+.btn-rsv:hover {
+    color: #fff;
+    border: #719A0B 1px solid;
+    background: transparent;
+}
+/* END OF BANNER */
 
-/* Header */
-
+/* HEADER */
 header {
     position: fixed;
     top: 0;
@@ -132,67 +152,124 @@ header.sticky .navigation li a {
 header .navigation li a:hover {
     color: #ff0157;
 }
+/* END OF HEADER */
 
-/* Section Historia */
-section {
+/* HISTORIA SECTION */
+.historia {
+position: relative;
+width: 100%;
+display: flex;
+}
+
+.historia .contentBx {
+    background: #72b8a4;
     padding: 100px;
+    width: 50%;
 }
-
-/* .historia, .comida, .equipo {
-    background-image: url(/img/laposada-fish-background.jpeg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-} */
-
-.row {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.historia .heading {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
 }
-.row .col50 {
-    position: relative;
-    width: 48%;
-}
-.titleText {
-    color: #111;
-    font-size: 2em;
+.text {
+    font-size: 16px;
+    color: #fff;
     font-weight: 300;
+    letter-spacing: 1px;
 }
-.titleText span {
-    color: #ff0157;
-    font-weight: 700;
-    font-size: 1.5em;
+.historia .imgBx {
+    background: url(/img/laposada_historiaimg.jpeg);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
 }
-.row .col50 .imgBx {
-    position: relative;
-    width: 100%; 
-    /* min-height: 300px; */
-    height: 100%;
+/* END OF HISTORIA SECTION */
+
+/* RESTAURANTE MENU */
+
+.restaurante-menu {
+	padding: 100px 0 60px 0;
 }
-.row .col50 .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* width: 90%; */
-    width: 600px;
-    /* height: 90%; */
-    height: 400px;
-    object-fit: cover;
-    border: 1px solid #fff;
-    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+.restaurante-menu .section-title {
+    margin-bottom: 70px;
 }
 
-/* Section Comida */
-.title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 20px;
+.restaurante-menu .menu-section hr {
+	margin: 0 auto;
 }
+.restaurante-menu .menu-section {
+	margin: 0 20px 80px;
+}
+.restaurante-menu .menu-section-title {
+	font-size: 32px;
+	display: block;
+	font-weight: 400;
+	color: #444;
+	margin: 20px 0;
+	text-align: center;
+}
+.restaurante-menu .menu-item {
+	margin: 45px 0;
+	font-size: 18px;
+}
+.restaurante-menu .menu-item-name {
+	font-weight: 400;
+	font-size: 20px;
+	color: #444;
+	margin-bottom: 10px;
+}
+.restaurante-menu .menu-item-description {
+	font-size: 15px;
+	width: 85%;
+    color: #777;
+}
+.restaurante-menu .menu-item-price {
+	float: right;
+	font-weight: 400;
+	color: #555;
+	margin-top: -36px;
+}
+
+/* END OF RESTAURANTE MENU */
+
+/* RECOMMENDATION */
+.categories {
+	padding-bottom: 30px;
+	text-align: center;
+}
+ul.cat li {
+	display: inline-block;
+}
+ol.type li {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 20px 0;
+}
+ol.type li a {
+	color: #999;
+	font-weight: 500;
+	font-size: 14px;
+	padding: 12px 24px;
+	background: #eee;
+	border: 0;
+	border-radius: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+    text-decoration: none;
+}
+ol.type li a.active {
+	color: #fff;
+	background-color: #444441;
+}
+ol.type li a:hover {
+	color: #fff;
+	background-color: #444441;
+    text-decoration: none;
+}
+
 .recomendaciones .content {
     display: flex;
     justify-content: center;
@@ -203,7 +280,7 @@ section {
 .recomendaciones .content .box {
     width: 340px;
     margin: 20px;
-    border: 15px solid #fff;
+    border: 3px solid #fff;
     box-shadow: 0 5px 35px rgba(0,0,0,0.08);
 }
 .recomendaciones .content .box .imgBx {
@@ -221,225 +298,35 @@ section {
 }
 .recomendaciones .content .box .text {
     padding: 15px 0 5px;
+    text-align: center;
+    justify-content: center;
 }
 .recomendaciones .content .box .text h3 {
     font-weight: 400;
     color: #111;
 }
 
-/* Section Chef  */
-.equipo .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-  }
-.equipo .content .box {
-    width: 340px;
-    margin: 10px;
-}
-.equipo .content .box .imgBx {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    border: 3px solid #fff;
-    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
-}
-.equipo .content .box .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.section-title {
+	margin-bottom: 70px;
 }
 
-/* Section Contact  */
-.contacto {
-    padding: 100px 0 60px 0;
-    background: url(/img/carta/laposada_contactbg.jpg) center top no-repeat fixed;
-    background-size: cover;
-}
-.contact-in {
-    width: 50%;
-    height: auto;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    border-radius: 10px;
-    background:rgba(255, 255, 255, 0.8);
-    min-width: 400px;
-
-}
-.contact-form {
-    width: 100%;
-    height: auto;
-    flex: 50%;
-    padding: 30px;
+.section-title p {
+	font-size: 15px;
+    color: #777;
     text-align: center;
 }
-.contact-form h2, p {
-    margin-bottom: 10px;
+.section-title hr {
+	margin: 0 auto;
+	margin-bottom: 40px;
 }
-.contact-form-txt {
-    width: 100%;
-    height: 40px;
-    color: #000;
-    border: 1px solid #bcbcbc;
-    outline: none; 
-    margin-bottom: 20px;
-    padding: 15px;
-}
-.contact-form-txtarea {
-    width: 100%;
-    height: 130px;
-    color: #000;
-    border: 1px solid #bcbcbc;
-    outline: none;
-    margin-bottom: 20px;
-    padding: 15px;
-}
-.contact-form-btn {
-    width: 100%;
-    border: none;
-    outline:  none;
-    background: #ff0157;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 10px 0;
-    cursor: pointer;
-    font-size: 18px;
-}
-.button.lined {
-    display: inline-block;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    border: 2px solid #fff;
-    border-radius: 3px;
-    background-color: transparent;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  
-  .button.lined:hover {
-    background-color: #fff;
-    color: #000;
-  }
+/* END OF RECOMMENDATION */
 
-/* Footer */
-footer {
-    background-color: #ff0157;
-    line-height: 1.5;
+/* EQUIPO SECTION */
+.equipo {
+    background:  #f1f38a;
 }
-/* Footer main */
-.ft-title {
-    color:#fff;
-    font-size: 1.375rem;
-    padding-bottom: 0.625rem;
-    justify-content: center;
-    text-transform: uppercase;
-}
-.ft-main {
-    padding: 1.25rem 1.875rem;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-}
-.ft-main-item {
-    padding: 1.25rem;
-    min-width: 12.5rem /*200px*/;
-}
-.ft-main-item a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 13px;
-
-}
-.ft-main-item p {
-    color: #fff;
-    font-size: 13px;
-}
-.button {
-    display: inline-block;
-    margin: 20px auto 10px;
-    padding: 6px 15px;
-    border: 2px solid #d41350;
-    border-radius: 3px;
-    background-color: #f72869;
-    transition: all 500ms ease;
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.button.lined {
-    display: inline-block;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    border: 2px solid #fff;
-    border-radius: 3px;
-    background-color: transparent;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  
-  .button.lined:hover {
-    background-color: #fff;
-    color: #d41350;
-  }
-
-/* Footer social */
-.ft-social {
-    padding: 0 1.875rem 1.25rem;
-}
-.ft-social-list {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    border-top: 1px #fff solid; 
-    padding-top: 1.25rem;
-}
-ul.ft-social-list  {
-    list-style: none;
-    padding-left: 0;
-}
-.ft-social-list li {
-    margin: 0.5rem;
-    font-size: 1.25rem;
-}
-.ft-social-list li a {
-    color: #fff;
-}
-
-/* Footer legal */
-.ft-legal {
-    padding: 0.9375rem 1.875rem;
-    background-color: #333;
-}
-.ft-legal-list {
-    width: 100%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-.ft-legal-list p {
-    color: #bbb;
-}
-/* Media Queries */
+/* END OF EQUIPO SECTION  */
+/* MEDIA QUERIES */
 @media (max-width: 991px) {
     header,
     header.sticky {
@@ -490,56 +377,26 @@ ul.ft-social-list  {
     section {
         padding: 20px;
     }
-    .banner .content h2 {
+    .banner .content h1 {
         font-size: 3em;
         color: #fff;
     }
-    /* .row {
+    .historia {
         flex-direction: column;
-        flex-wrap: wrap;
     }
-    .row .col50 {
-        position: relative;
-        width: 100%;
-    }
-    .row .col50 .imgBx {
-        height: 375px;
-        margin: 20px;
-    } */
-    
-    .menu .content {
-        margin-top: 20px;
-    }
-    .menu .content .box {
-        margin: 10px;
-    }
-    .menu .content .box .imgBx {
-        height: 260px;
-    }
-    .title {
+    .historia .contentBx, .historia .imgBx {
+        width:100%;
+        padding: 50px;
+        min-width: 400px;
         text-align: center;
-    }
-    .titleText {
-        font-size: 1.8em;
-        line-height: 1.5em;
-        margin-bottom: 15px;
-        font-weight: 300;
-    }
-    .contact-form {
-        padding: 35px 40px;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    .ft-main {
-        display: flex;
-        flex-direction: column;
     }
     
     @media (max-width: 480px) {
-        .banner .content h2 {
+        .banner .content h1 {
             font-size: 2.2em;
             color: #fff;
         }
     
     }
+
 }
