@@ -13,7 +13,7 @@ const Navbar = () => {
                 <li>Menú</li>
                 <li>Equipo</li>
                 <li>Contacto</li>
-                <li><button className="btn"><MdOutlineWhatsapp size={18} color="green" />
+                <li><button className="btn">Whats App<MdOutlineWhatsapp size={18} color="green" />
                 </button></li>
             </ul>
         </nav>
