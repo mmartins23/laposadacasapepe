@@ -1,16 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-*{ 
+/* Color variables for better consistency */
+:root {
+  --color-primary: #e43c5c;  /* Primary color (used for "Nuestra Carta") */
+  --color-secondary: #719A0B;  /* Secondary color (used for "Reserva Mesa") */
+  --color-white: #fff;  /* White color */
+  --color-black: #212121;  /* Black color */
+  --color-bg: #f5f5f5;  /* Background color */
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
 }
 
+/* Styling for body background */
 body {
-  background: #f5f5f5;
+  background: var(--color-bg);
 }
 
+/* Default link styles */
 a {
   text-decoration: none;
   color: inherit;
@@ -18,18 +29,49 @@ a {
   cursor: pointer;
 }
 
+/* General container padding */
 .container {
   padding-left: 10%;
   padding-right: 10%;
 }
 
+/* General button styles */
 .btn {
-  background: #fff;
-  color: #212121;
+  background: var(--color-white);  /* White background */
+  color: var(--color-black);  /* Black text */
   padding: 14px 25px;
   font-size: 16px;
   border-radius: 30px;
   cursor: pointer;
   border: 0;
   outline: 0;
+  display: block;
+  margin: 10px 0;  /* Buttons now appear below each other */
+  justify-content: center;
+  text-transform: uppercase;  /* Uppercase text */
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;  /* Smooth hover effect */
+}
+
+/* Specific styles for "Nuestra Carta" button */
+.carta-btn {
+  background-color: var(--color-primary);  /* Pink background */
+}
+
+/* Specific styles for "Reserva Mesa" button */
+.reserva-btn {
+  background-color: var(--color-secondary);  /* Green background */
+}
+
+/* Hover effects for "Nuestra Carta" button */
+.carta-btn:hover {
+  color: var(--color-white);  /* White text on hover */
+  border: 1px solid var(--color-primary);  /* Pink border */
+  background: transparent;  /* Transparent background on hover */
+}
+
+/* Hover effects for "Reserva Mesa" button */
+.reserva-btn:hover {
+  color: var(--color-white);  /* White text on hover */
+  border: 1px solid var(--color-secondary);  /* Green border */
+  background: transparent;  /* Transparent background on hover */
 }
