@@ -48,17 +48,18 @@ a {
   display: block;
   margin: 10px 0;  /* Buttons now appear below each other */
   justify-content: center;
-  text-transform: uppercase;  /* Uppercase text */
   transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;  /* Smooth hover effect */
 }
 
 /* Specific styles for "Nuestra Carta" button */
 .carta-btn {
+  text-transform: uppercase;  /* Uppercase text */
   background-color: var(--color-primary);  /* Pink background */
 }
 
 /* Specific styles for "Reserva Mesa" button */
 .reserva-btn {
+  text-transform: uppercase;  /* Uppercase text */
   background-color: var(--color-secondary);  /* Green background */
 }
 
