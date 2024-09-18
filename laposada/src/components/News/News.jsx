@@ -12,7 +12,7 @@ const News = () => {
         <img src={news_1} alt='Jamon Serrano' />
         <div className='caption'>
           <span><GiMeat size={36} /></span>
-          <p>Sabor Inigualable del Jamón</p>
+          <p>Jamón Serrano de Calidad</p>
         </div>
       </div>
       <div className='new'>
