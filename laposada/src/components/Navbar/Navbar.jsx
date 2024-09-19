@@ -1,14 +1,13 @@
-import { MdOutlineFoodBank, MdOutlineWhatsapp } from "react-icons/md";
 import './Navbar.css';
-import { useState } from "react";
-import { useEffect } from "react";
+import { MdOutlineFoodBank, MdOutlineWhatsapp } from "react-icons/md";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
     const [sticky, setSticky] = useState(false);
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            window.screenY > 50 ? setSticky(true) : setSticky(false)
+            window.scrollY > 50 ? setSticky(true) : setSticky(false)
         })
     }, [])
 
