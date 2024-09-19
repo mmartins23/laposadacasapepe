@@ -1,0 +1,85 @@
+/* Container principal para a recomendação */
+.recommendation {
+    margin: 80px auto; /* Centraliza horizontalmente e adiciona espaço acima e abaixo */
+    width: 90%; /* Define a largura do container como 90% da largura do elemento pai */
+    text-align: center; /* Centraliza o texto dentro do container */
+}
+
+/* Container para os botões de categorias */
+.category-buttons {
+    margin-bottom: 20px; /* Adiciona espaço abaixo dos botões */
+}
+
+/* Estilo para os botões de categorias */
+.category-buttons button {
+    padding: 10px 20px; /* Adiciona espaço interno (padding) ao redor do texto */
+    margin-right: 10px; /* Adiciona espaço à direita de cada botão */
+    background-color: #d8d3d3; /* Define a cor de fundo padrão dos botões */
+    border: none; /* Remove a borda padrão dos botões */
+    border-radius: 20px; /* Arredonda os cantos dos botões */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    font-size: 16px; /* Define o tamanho da fonte dos botões */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo quando o botão muda de estado */
+}
+
+/* Estilo para o botão ativo (categoria selecionada) */
+.category-buttons button.active {
+    background-color: #e43c5c; /* Define a cor de fundo para o botão ativo */
+    color: white; /* Define a cor do texto para o botão ativo */
+}
+
+/* Estilo para os botões ao passar o mouse sobre eles */
+.category-buttons button:hover {
+    background-color: #e43c5c; /* Define a cor de fundo quando o mouse passa sobre o botão */
+    color: white; /* Define a cor do texto quando o mouse passa sobre o botão */
+}
+
+/* Container para a galeria de imagens */
+.gallery {
+    display: flex; /* Usa o layout flexível para os itens dentro da galeria */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se não houver espaço suficiente */
+    gap: 20px; /* Adiciona espaço entre os itens da galeria */
+    justify-content: center; /* Centraliza os itens horizontalmente dentro da galeria */
+}
+
+/* Container individual para cada imagem na galeria */
+.image-container {
+    position: relative; /* Permite o posicionamento absoluto dos elementos internos (como o texto sobreposto) */
+    width: calc(33.333% - 20px); /* Define a largura como 1/3 da largura total do container menos a margem */
+    margin-bottom: 20px; /* Adiciona espaço abaixo de cada imagem */
+    box-sizing: border-box; /* Inclui padding e borda na largura total do elemento */
+    border-radius: 10px; /* Arredonda os cantos do container da imagem */
+}
+
+/* Estilo para as imagens dentro do container */
+.image-container img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do container */
+    border-radius: 10px; /* Arredonda os cantos das imagens */
+}
+
+/* Estilo para o texto sobreposto nas imagens */
+.image-text {
+    position: absolute; /* Posiciona o texto sobre a imagem */
+    bottom: 10px; /* Alinha o texto na parte inferior do container */
+    left: 0; /* Alinha o texto ao lado esquerdo do container */
+    right: 0; /* Alinha o texto ao lado direito do container */
+    color: white; /* Define a cor do texto */
+    background: rgba(0, 0, 0, 0.5); /* Define um fundo semitransparente para o texto */
+    padding: 10px; /* Adiciona espaço interno ao redor do texto */
+    text-align: center; /* Centraliza o texto */
+    font-size: 16px; /* Define o tamanho da fonte do texto */
+    border-radius: 0 0 10px 10px; /* Arredonda os cantos inferiores do container de texto */
+}
+
+/* Responsividade para telas menores (tablets e dispositivos móveis) */
+@media (max-width: 768px) {
+    .image-container {
+        width: calc(50% - 20px); /* Ajusta a largura para 2 imagens por linha em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        width: calc(100% - 20px); /* Ajusta a largura para 1 imagem por linha em telas muito pequenas */
+    }
+}
