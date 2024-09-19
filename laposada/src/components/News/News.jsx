@@ -1,31 +1,27 @@
 import './News.css';
-import news_1 from '../../assets/laposada_jamon.jpg';
-import news_2 from '../../assets/laposada_paella.jpg';
-import news_3 from '../../assets/laposada_meat.jpg';
-import { GiMeat, GiChickenOven, GiForkKnifeSpoon } from "react-icons/gi";
+import news_1 from '../../assets/laposada_news1.jpg';
+import news_2 from '../../assets/laposasa_news2.jpg';
+import news_3 from '../../assets//laposada_news3.jpg';
 
 
 const News = () => {
   return (
     <div className='news'>
       <div className='new'>
-        <img src={news_1} alt='Jamon Serrano' />
+        <img src={news_1} alt='La Posada Restaurant' />
         <div className='caption'>
-          <span><GiMeat size={36} /></span>
-          <p>Jamón Serrano de Calidad</p>
+          <p>¡Tu Mesa Te Espera!</p>
         </div>
       </div>
       <div className='new'>
-        <img src={news_2} alt='Paella' />
+        <img src={news_2} alt='La Posada Restaurant Garden' />
         <div className='caption'>
-          <span><GiForkKnifeSpoon size={36} /></span>
-          <p>Especialidad en Paella</p>
+          <p>Disfruta al Aire Libre en Nuestro Jardín</p>
         </div>
       </div>
       <div className='new'>
-        <img src={news_3} alt='BBQ' />
+        <img src={news_3} alt='La Posada Restaurant Barbeque' />
         <div className='caption'>
-          <span><GiChickenOven size={36} /></span>
           <p>Auténtico Sabor a la Brasa</p>
         </div>
       </div>
