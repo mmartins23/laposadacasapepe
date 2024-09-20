@@ -17,7 +17,8 @@ const Navbar = () => {
                 <MdOutlineFoodBank size={64} />
             </span>
             <ul>
-                <li>Historia</li>
+                <li>El Restaurante</li>
+                <li>Gastronomía</li>
                 <li>Menú</li>
                 <li>Equipo</li>
                 <li>Contacto</li>
