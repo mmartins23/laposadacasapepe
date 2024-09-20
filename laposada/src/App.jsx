@@ -5,6 +5,7 @@ import Title from "./components/Title/Title";
 import About from "./components/About/About";
 import Gallery from "./components/Gallery/Gallery";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Gallery/>
         <Title subtitle='Contacto' title='Haz tu reserva ahora y disfruta de los mejores platos de la Región de Murcia'/>
         <Contact/>
+        <Footer/>
       </div>
     </div>
   )
