@@ -1,0 +1,69 @@
+.contact {
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    color: #676767;
+}
+
+.contact-col h3 {
+    color: #000f38;
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-col h3 img {
+    width: 35px;
+    margin-left: 10px;
+}
+
+.contact-col p {
+    max-width: 450px;
+    list-style: 0.3;
+}
+
+.contact-col ul li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact-col ul li span {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.contact-col ul li span.facebook {
+    color: #1877f2; 
+    font-size: 24px;
+}
+
+.contact-col ul li span.whatsapp {
+    color: #25d366;
+    font-size: 24px;
+}
+
+.contact-col ul li span.googlemaps {
+    color: #db4437;
+    font-size: 24px;
+}
+
+.contact-col ul li span.timer {
+    color: #181716; 
+    font-size: 24px;
+}
+
+.contact-col iframe.google-map {
+    border: 0; /* Remove a borda */
+    width: 100%; /* Largura total */
+    height: 300px; /* Aumente a altura aqui */
+    margin-top: 20px; /* Espaço acima do iframe */
+}

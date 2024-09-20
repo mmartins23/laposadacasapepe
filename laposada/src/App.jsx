@@ -4,6 +4,7 @@ import News from "./components/News/News";
 import Title from "./components/Title/Title";
 import About from "./components/About/About";
 import Gallery from "./components/Gallery/Gallery";
+import Contact from "./components/Contact/Contact";
 
 
 const App = () => {
@@ -17,6 +18,8 @@ const App = () => {
         <About/>
         <Title subtitle='Recomendaciones' title='Más de 25 platos a elegir, algunas de nuestras sugerencias' />
         <Gallery/>
+        <Title subtitle='Contacto' title='Haz tu reserva ahora y disfruta de los mejores platos de la Región de Murcia'/>
+        <Contact/>
       </div>
     </div>
   )
