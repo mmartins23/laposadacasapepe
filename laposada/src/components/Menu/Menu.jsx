@@ -22,13 +22,13 @@ const Menu = () => {
         <h4><sup>€</sup>40</h4>
         <p>MÍN 2 PERSONAS</p>
         <h5>ENTRANTES</h5>
-        <p>Cuencos con 3 salsas y pan gallego | Carpaccio de salmón | Alcachofa rellena | Gambas al ajillo.</p>
+        <p>Cuencos con 3 salsas y pan gallego | Carpaccio de salmón | Alcachofa rellena (según temporada) | Huevos con bechamel | Gambas al ajillo | Ensalada de capellán.</p>
         <h5>PLATO A ELEGIR</h5>
-        <p>Cordero | Pollo | Churrasco de ternera | Solomillo al romero.</p>
+        <p>Cordero | Pollo | Churrasco de ternera | Secreto al romero | Costillar de cerdo con salsa BBQ | Solomillo al romero | | Pescados frescos. (Todo a la brasa acompañado de patatas fritas y pimientos de padrón)</p>
         <h5>POSTRES</h5>
         <p>Postres caseros a elegir.</p>
         <h5>BEBIDAS</h5>
-        <p>Agua | Refrescos | Cerveza | Vino R. Duero.</p>
+        <p>Agua | Refrescos | Cerveza | Vino Blanco, Rosado y Tinto R. Duero (1botella x 2 pers.) | Café.</p>
       </div>
       
       <div className="menu-item">
@@ -36,13 +36,13 @@ const Menu = () => {
         <h4><sup>€</sup>40</h4>
         <p>MÍN 2 PERSONAS</p>
         <h5>ENTRANTES</h5>
-        <p>Cuencos con 3 salsas y pan gallego | Berenjena Chips | Jamón Ibérico.</p>
+        <p>Cuencos con 3 salsas y pan gallego | Berenjena Chips | Jamón Ibérico | Quesos variados con mermeladas caseras | Ensalada de capellán.</p>
         <h5>PLATO PRINCIPAL</h5>
         <p>Arroz de conejo con serranas a la leña con sarmientos.</p>
         <h5>POSTRES</h5>
         <p>Postres caseros a elegir.</p>
         <h5>BEBIDAS</h5>
-        <p>Agua | Refrescos | Cerveza | Vino R. Duero.</p>
+        <p>Agua | Refrescos | Cerveza | Vino Blanco, Rosado y Tinto R. Duero (1botella x 2 pers.) | Café.</p>
       </div>
       
       <div className="menu-item recommended">
@@ -50,13 +50,13 @@ const Menu = () => {
         <h4><sup>€</sup>50</h4>
         <p>MÍN 2 PERSONAS</p>
         <h5>ENTRANTES</h5>
-        <p>Cuencos con 3 salsas y pan gallego | Jamón Ibérico | Gamba roja.</p>
+        <p>Cuencos con 3 salsas y pan gallego | Jamón Ibérico | Quesos variados con mermelada casera | Huevos con bechamel | Gamba roja | Ensalada con brotes tiernos, con salmón, fruta, queso parmesano y frutos secos.</p>
         <h5>PLATO A ELEGIR</h5>
-        <p>Entrecot de vaca extra madurada | Solomillo al romero.</p>
+        <p>Entrecot de vaca extra madurada | Solomillo al romero | Pollo | Secreto al romero | Costillar con salsa barbacoa | Costillas de cordero | Churrasco de ternera | Lubina, dorada o rodaballo | (Todo a la brasa acompañado de patatas fritas y pimientos de padrón).</p>
         <h5>POSTRES</h5>
         <p>Dama de la posada.</p>
         <h5>BEBIDAS</h5>
-        <p>Agua | Refrescos | Vino R. Duero.</p>
+        <p>Agua | Refrescos | Cerveza | Vino Blanco, Rosado y Tinto R. Duero (1botella x 2 pers.) | Café.</p>
       </div>
     </div>
   );
