@@ -36,6 +36,13 @@
     margin: 20px 0;
 }
 
+.contact-col ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor do texto */
+}
+
 .contact-col ul li span {
     width: 20px;
     margin-right: 10px;
