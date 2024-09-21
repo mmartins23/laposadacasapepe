@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Gallery from "./components/Gallery/Gallery";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Menu from "./components/Menu/Menu";
 
 
 const App = () => {
@@ -19,6 +20,8 @@ const App = () => {
         <About/>
         <Title subtitle='Recomendaciones' title='Más de 25 platos a elegir, algunas de nuestras sugerencias' />
         <Gallery/>
+        <Title subtitle='Nuestro Menú' title='Comparte momentos y sabores únicos con amigos y familia. ¡Te esperamos!' />
+        <Menu/>
         <Title subtitle='Contacto' title='Haz tu reserva ahora y disfruta de los mejores platos de la Región de Murcia'/>
         <Contact/>
         <Footer/>
