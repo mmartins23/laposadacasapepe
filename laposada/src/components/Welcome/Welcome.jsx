@@ -1,12 +1,12 @@
-import './News.css';
+import './Welcome.css';
 import news_1 from '../../assets/laposada_news1.jpg';
 import news_2 from '../../assets/laposasa_news2.jpg';
 import news_3 from '../../assets//laposada_news3.jpg';
 
 
-const News = () => {
+const Welcome = () => {
   return (
-    <div className='news'>
+    <div className='news' id='El Restaurante'>
       <div className='new'>
         <img src={news_1} alt='La Posada Restaurant' />
         <div className='caption'>
@@ -29,4 +29,4 @@ const News = () => {
   )
 }
 
-export default News
+export default Welcome;
