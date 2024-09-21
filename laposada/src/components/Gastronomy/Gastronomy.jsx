@@ -1,4 +1,4 @@
-import './Gallery.css';
+import './Gastronomy.css';
 import { useState } from 'react';
 import menu_1 from '../../assets/menu1.jpg';
 import menu_2 from '../../assets/menu2.jpg';
@@ -29,7 +29,7 @@ const images = [
   { src: menu_12, text: 'Dama de la posada', category: 'Postres' }
 ];
 
-const Gallery = () => {
+const Gastromomy = () => {
   const [activeCategory, setActiveCategory] = useState('Todos');
 
   // Filtra as imagens de acordo com a categoria ativa
@@ -38,7 +38,7 @@ const Gallery = () => {
     : images.filter(image => image.category === activeCategory);
 
   return (
-    <div className='recommendation'>
+    <div className='gastromomy' id='Gastromonia'>
       {/* Botões de categorias */}
       <div className='category-buttons'>
         <button onClick={() => setActiveCategory('Todos')} className={activeCategory === 'Todos' ? 'active' : ''}>
@@ -68,4 +68,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default Gastromomy;

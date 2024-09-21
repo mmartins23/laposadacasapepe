@@ -1,5 +1,5 @@
 /* Container principal para a recomendação */
-.recommendation {
+.gastromomy {
     margin: 80px auto; /* Centraliza horizontalmente e adiciona espaço acima e abaixo */
     width: 90%; /* Define a largura do container como 90% da largura do elemento pai */
     text-align: center; /* Centraliza o texto dentro do container */
