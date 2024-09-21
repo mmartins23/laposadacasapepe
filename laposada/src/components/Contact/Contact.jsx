@@ -6,7 +6,7 @@ import { SiFacebook, SiWhatsapp, SiGooglemaps } from "react-icons/si";import { I
 
 const Contact = () => {
   return (
-    <div className='contact'>
+    <div className='contact' id='Contacto'>
       <div className='contact-col'>
         <h3>Envíanos un mensaje <img src={msg_icon} alt='Email Icon'/></h3>
         <p>No dudes en comunicarte con nosotros. Tus comentarios, preguntas y sugerencias son importantes para nosotros, ya que nos esforzamos por brindar un servicio excepcional en nuestro restaurante. Encuentra nuestra información de contacto a continuación.</p>
