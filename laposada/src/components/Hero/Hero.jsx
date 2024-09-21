@@ -4,7 +4,7 @@ import './Hero.css';
 
 const Hero = () => {
   return (
-    <div className='hero container'>
+    <div className='hero container' id="Hero">
       <div className='hero-text'>
         <h1>La Posada Casa Pepe</h1>
         <p>Desde 1846, elaborando comida casera con los más altos estándares de calidad.</p>
