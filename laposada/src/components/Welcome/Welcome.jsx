@@ -16,7 +16,7 @@ const Welcome = () => {
       <div className='new'>
         <img src={news_2} alt='La Posada Restaurant Garden' />
         <div className='caption'>
-          <p>Disfruta al Aire Libre en Nuestro Jardín</p>
+          <p>Disfruta Nuestro Jardín</p>
         </div>
       </div>
       <div className='new'>
