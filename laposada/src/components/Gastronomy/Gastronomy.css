@@ -1,85 +1,102 @@
-/* Container principal para a recomendação */
+/* Main container for the gastronomy section */
 .gastromomy {
-    margin: 80px auto; /* Centraliza horizontalmente e adiciona espaço acima e abaixo */
-    width: 90%; /* Define a largura do container como 90% da largura do elemento pai */
-    text-align: center; /* Centraliza o texto dentro do container */
+    margin: 80px auto; /* Centers horizontally and adds vertical spacing */
+    width: 90%; /* Sets the container width to 90% of the viewport */
+    text-align: center; /* Centers text inside the container */
 }
 
-/* Container para os botões de categorias */
+/* Container for category buttons */
 .category-buttons {
-    margin-bottom: 20px; /* Adiciona espaço abaixo dos botões */
+    margin-bottom: 20px; /* Adds spacing below the buttons */
 }
 
-/* Estilo para os botões de categorias */
+/* Styling for category buttons */
 .category-buttons button {
-    padding: 10px 20px; /* Adiciona espaço interno (padding) ao redor do texto */
-    margin-right: 10px; /* Adiciona espaço à direita de cada botão */
-    background-color: #d8d3d3; /* Define a cor de fundo padrão dos botões */
-    border: none; /* Remove a borda padrão dos botões */
-    border-radius: 20px; /* Arredonda os cantos dos botões */
-    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
-    font-size: 16px; /* Define o tamanho da fonte dos botões */
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo quando o botão muda de estado */
+    padding: 10px 20px; /* Adds padding around the text */
+    margin-right: 10px; /* Adds space to the right of each button */
+    background-color: #d8d3d3; /* Default background color */
+    border: none; /* Removes default borders */
+    border-radius: 20px; /* Rounds button corners */
+    cursor: pointer; /* Changes cursor to pointer */
+    font-size: 16px; /* Sets font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    margin-bottom: 10px; /* Adds space below buttons for mobile layout */
 }
 
-/* Estilo para o botão ativo (categoria selecionada) */
+/* Active button styling */
 .category-buttons button.active {
-    background-color: #e43c5c; /* Define a cor de fundo para o botão ativo */
-    color: white; /* Define a cor do texto para o botão ativo */
+    background-color: #e43c5c; /* Background color for active button */
+    color: white; /* Text color for active button */
 }
 
-/* Estilo para os botões ao passar o mouse sobre eles */
+/* Hover effect for buttons */
 .category-buttons button:hover {
-    background-color: #e43c5c; /* Define a cor de fundo quando o mouse passa sobre o botão */
-    color: white; /* Define a cor do texto quando o mouse passa sobre o botão */
+    background-color: #e43c5c; /* Background color on hover */
+    color: white; /* Text color on hover */
 }
 
-/* Container para a galeria de imagens */
+/* Image gallery container */
 .gallery {
-    display: flex; /* Usa o layout flexível para os itens dentro da galeria */
-    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se não houver espaço suficiente */
-    gap: 20px; /* Adiciona espaço entre os itens da galeria */
-    justify-content: center; /* Centraliza os itens horizontalmente dentro da galeria */
+    display: flex; /* Flex layout for images */
+    flex-wrap: wrap; /* Allows wrapping to the next row */
+    gap: 20px; /* Adds spacing between images */
+    justify-content: center; /* Centers the images */
 }
 
-/* Container individual para cada imagem na galeria */
+/* Individual image container */
 .image-container {
-    position: relative; /* Permite o posicionamento absoluto dos elementos internos (como o texto sobreposto) */
-    width: calc(33.333% - 20px); /* Define a largura como 1/3 da largura total do container menos a margem */
-    margin-bottom: 20px; /* Adiciona espaço abaixo de cada imagem */
-    box-sizing: border-box; /* Inclui padding e borda na largura total do elemento */
-    border-radius: 10px; /* Arredonda os cantos do container da imagem */
+    position: relative; /* Enables positioning for overlay text */
+    width: calc(25% - 20px); /* Four images per row on desktop */
+    margin-bottom: 20px; /* Adds space below images */
+    box-sizing: border-box; /* Ensures padding/border doesn't affect width */
+    border-radius: 10px; /* Rounds image corners */
 }
 
-/* Estilo para as imagens dentro do container */
+/* Styling for images inside the container */
 .image-container img {
-    width: 100%; /* Garante que a imagem ocupe toda a largura do container */
-    border-radius: 10px; /* Arredonda os cantos das imagens */
+    width: 100%; /* Ensures image takes full width of the container */
+    border-radius: 10px; /* Rounds the image corners */
 }
 
-/* Estilo para o texto sobreposto nas imagens */
+/* Text overlay on images */
 .image-text {
-    position: absolute; /* Posiciona o texto sobre a imagem */
-    bottom: 10px; /* Alinha o texto na parte inferior do container */
-    left: 0; /* Alinha o texto ao lado esquerdo do container */
-    right: 0; /* Alinha o texto ao lado direito do container */
-    color: white; /* Define a cor do texto */
-    background: rgba(0, 0, 0, 0.5); /* Define um fundo semitransparente para o texto */
-    padding: 10px; /* Adiciona espaço interno ao redor do texto */
-    text-align: center; /* Centraliza o texto */
-    font-size: 16px; /* Define o tamanho da fonte do texto */
-    border-radius: 0 0 10px 10px; /* Arredonda os cantos inferiores do container de texto */
+    position: absolute; /* Places text over the image */
+    bottom: 10px; /* Positions text at the bottom */
+    left: 0;
+    right: 0;
+    color: white; /* Text color */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px; /* Adds padding around the text */
+    text-align: center; /* Centers the text */
+    font-size: 16px; /* Text size */
+    border-radius: 0 0 10px 10px; /* Rounds bottom corners */
 }
 
-/* Responsividade para telas menores (tablets e dispositivos móveis) */
+/* Responsive styles for tablets and mobile devices */
+@media (max-width: 1024px) {
+    .image-container {
+        width: calc(33.333% - 20px); /* Three images per row on tablets */
+    }
+}
+
 @media (max-width: 768px) {
     .image-container {
-        width: calc(50% - 20px); /* Ajusta a largura para 2 imagens por linha em telas menores */
+        width: calc(100% - 20px); /* One image per row on mobile */
     }
 }
 
 @media (max-width: 480px) {
-    .image-container {
-        width: calc(100% - 20px); /* Ajusta a largura para 1 imagem por linha em telas muito pequenas */
+    /* Stack buttons vertically and adjust width for mobile screens */
+    .category-buttons {
+        display: flex;
+        flex-direction: column; /* Stacks buttons vertically */
+        align-items: center; /* Centers buttons */
+    }
+
+    .category-buttons button {
+        width: 100%; /* Full width buttons */
+        margin-right: 0; /* Removes right margin */
+        padding: 15px 0; /* Adjusts padding for larger click area */
+        font-size: 14px; /* Slightly smaller font size */
     }
 }
