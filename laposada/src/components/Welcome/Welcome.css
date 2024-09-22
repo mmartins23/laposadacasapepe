@@ -1,60 +1,66 @@
+/* Main container for the 'News' section */
 .news {
-    margin: 80px auto;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Allows items to wrap to the next line if they don't fit, making the layout responsive */
+    margin: 80px auto; /* Centraliza a seção 'news' e adiciona espaçamento vertical */
+    width: 90%; /* Define a largura do conteúdo para 90% da largura da tela */
+    display: flex; /* Utiliza layout flexbox para alinhar os itens */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-between; /* Distribui espaço uniformemente entre os itens */
+    flex-wrap: wrap; /* Permite que os itens sejam movidos para a próxima linha, tornando o layout responsivo */
 }
 
+/* Individual news item container */
 .new {
-    flex-basis: 31%; /* Each item takes up approximately 31% of the container's width */
-    position: relative; /* Enables positioning for the caption overlay */
-    margin-bottom: 20px; /* Adds space between the rows of images */
+    flex-basis: 31%; /* Cada item ocupa aproximadamente 31% da largura do contêiner */
+    position: relative; /* Habilita o posicionamento para o sobrepor da legenda (caption) */
+    margin-bottom: 20px; /* Adiciona espaçamento entre as linhas de imagens */
 }
 
+/* Image styling for the news items */
 .new img {
-    width: 100%; /* Ensures the image takes up the full width of its container */
-    height: 375px; /* Fixes the image height to maintain consistent portrait format */
-    object-fit: cover; /* Ensures the image covers the entire container without distortion */
-    border-radius: 10px; /* Adds rounded corners to the images */
-    display: block; /* Makes the image a block element to prevent inline spacing issues */
+    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+    height: 375px; /* Define uma altura fixa para manter um formato de retrato consistente */
+    object-fit: cover; /* Garante que a imagem cubra todo o contêiner sem distorções */
+    border-radius: 10px; /* Adiciona cantos arredondados às imagens */
+    display: block; /* Faz da imagem um elemento block para evitar problemas de espaçamento inline */
 }
 
+/* Styling for the caption overlay */
 .caption {
-    border-radius: 10px; /* Adds rounded corners to the caption overlay */
-    position: absolute; /* Positions the caption over the image */
-    top: 0;
+    border-radius: 10px; /* Adiciona cantos arredondados ao sobrepor da legenda */
+    position: absolute; /* Posiciona a legenda sobre a imagem */
+    top: 0; 
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0, 15, 152, 0.3); /* Semi-transparent dark overlay */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; /* Centers the caption text vertically and horizontally */
-    color: #fff; /* White text for readability */
-    cursor: pointer; /* Pointer cursor to indicate interactivity */
-    opacity: 0; /* Initially hidden, shown on hover */
-    transition: opacity 0.3s ease-in-out; /* Smooth transition for the hover effect */
+    background: rgba(0, 15, 152, 0.3); /* Sobreposição escura semitransparente */
+    display: flex; /* Flexbox layout para centralizar o texto da legenda */
+    align-items: center; /* Centraliza o texto verticalmente */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    flex-direction: column; /* Garante que o texto da legenda esteja empilhado verticalmente */
+    color: #fff; /* Texto branco para legibilidade */
+    cursor: pointer; /* Mostra o cursor de ponteiro para indicar interatividade */
+    opacity: 0; /* Inicialmente invisível, será mostrado no hover */
+    transition: opacity 0.3s ease-in-out; /* Transição suave para o efeito de hover */
 }
 
+/* Show the caption when the user hovers over the image */
 .new:hover .caption {
-    opacity: 1; /* Caption becomes visible when the user hovers over the image */
+    opacity: 1; /* A legenda torna-se visível quando o usuário passa o mouse sobre a imagem */
 }
 
+/* Responsive styles for mobile view */
 @media (max-width: 650px) {
     .news {
-        flex-direction: column; /* Stacks the images in a single column for mobile view */
+        flex-direction: column; /* Empilha as imagens em uma única coluna para a visualização móvel */
     }
 
     .new {
-        flex-basis: 100%; /* Each image takes up 100% of the container width in mobile view */
-        margin: 20px 0; /* Adds space between the images */
+        flex-basis: 100%; /* Cada imagem ocupa 100% da largura do contêiner na visualização móvel */
+        margin: 20px 0; /* Adiciona espaço entre as imagens na visualização móvel */
     }
 
     .new img {
-        width: 100%; /* Ensures the image still takes up the full width of its container in mobile */
-        height: 375px; /* Maintains the same fixed height for consistent image size */
+        width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner na visualização móvel */
+        height: 375px; /* Mantém a mesma altura fixa para um tamanho de imagem consistente */
     }
 }
