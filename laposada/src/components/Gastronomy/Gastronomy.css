@@ -46,7 +46,7 @@
 /* Individual image container */
 .image-container {
     position: relative; /* Define a posição relativa para possibilitar a sobreposição de texto */
-    width: calc(25% - 20px); /* Quatro imagens por linha em telas grandes, com espaçamento de 20px */
+    width: calc(33.333% - 20px); /* Exibe três imagens por linha em telas de desktops */
     margin-bottom: 20px; /* Adiciona espaçamento abaixo de cada imagem */
     box-sizing: border-box; /* Garante que padding e border não afetem a largura definida */
     border-radius: 10px; /* Arredonda os cantos das imagens */
@@ -75,7 +75,7 @@
 /* Responsive styles for tablets and mobile devices */
 @media (max-width: 1024px) {
     .image-container {
-        width: calc(33.333% - 20px); /* Exibe três imagens por linha em telas de tablets */
+        width: calc(50% - 20px); /* Exibe duas imagens por linha em telas de tablets */
     }
 }
 
