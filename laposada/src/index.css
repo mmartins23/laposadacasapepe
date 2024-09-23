@@ -1,78 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-/* Color variables for better consistency */
+/* Variáveis de cor para melhor consistência */
 :root {
-  --color-primary: #e43c5c;  /* Primary color (used for "Nuestra Carta") */
-  --color-secondary: #719A0B;  /* Secondary color (used for "Reserva Mesa") */
-  --color-white: #fff;  /* White color */
-  --color-black: #212121;  /* Black color */
-  --color-bg: #f5f5f5;  /* Background color */
+  --color-primary: #e43c5c;  /* Cor primária (usada no botão "Nuestra Carta") */
+  --color-secondary: #719A0B;  /* Cor secundária (usada no botão "Reserva Mesa") */
+  --color-white: #fff;  /* Cor branca */
+  --color-black: #212121;  /* Cor preta */
+  --color-bg: #f5f5f5;  /* Cor de fundo */
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;  /* Ajusta o box model para incluir padding e border na largura total */
+  font-family: "Outfit", sans-serif;  /* Fonte padrão para todos os elementos */
 }
 
-/* Styling for body background */
+/* Estilo para o fundo do body */
 body {
-  background: var(--color-bg);
+  background: var(--color-bg);  /* Define a cor de fundo usando a variável */
 }
 
-/* Default link styles */
+/* Estilos padrão para links */
 a {
-  text-decoration: none;
-  color: inherit;
-  line-height: 1;
-  cursor: pointer;
+  text-decoration: none;  /* Remove o sublinhado dos links */
+  color: inherit;  /* Mantém a cor do texto do link */
+  line-height: 1;  /* Define a altura da linha */
+  cursor: pointer;  /* Muda o cursor para indicar que é clicável */
 }
 
-/* General container padding */
+/* Padding geral para o container */
 .container {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 10%;  /* Espaçamento à esquerda */
+  padding-right: 10%;  /* Espaçamento à direita */
 }
 
-/* General button styles */
+/* Estilos gerais para botões */
 .btn {
-  background: var(--color-white);  /* White background */
-  color: var(--color-black);  /* Black text */
-  padding: 14px 25px;
-  font-size: 16px;
-  border-radius: 30px;
-  cursor: pointer;
-  border: 0;
-  outline: 0;
-  display: block;
-  margin: 10px 0;  /* Buttons now appear below each other */
-  justify-content: center;
-  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;  /* Smooth hover effect */
+  background: var(--color-white);  /* Fundo branco */
+  color: var(--color-black);  /* Texto preto */
+  padding: 14px 25px;  /* Espaçamento interno */
+  font-size: 16px;  /* Tamanho da fonte */
+  border-radius: 30px;  /* Bordas arredondadas */
+  cursor: pointer;  /* Muda o cursor para indicar que é clicável */
+  border: 0;  /* Remove a borda */
+  outline: 0;  /* Remove a borda de foco */
+  display: block;  /* Exibe como bloco */
+  margin: 10px 0;  /* Botões aparecem abaixo uns dos outros */
+  justify-content: center;  /* Centraliza o conteúdo */
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;  /* Efeito suave na transição */
 }
 
-/* Specific styles for "Nuestra Carta" button */
+/* Estilos específicos para o botão "Nuestra Carta" */
 .carta-btn {
-  text-transform: uppercase;  /* Uppercase text */
-  background-color: var(--color-primary);  /* Pink background */
+  text-transform: uppercase;  /* Texto em maiúsculas */
+  background-color: var(--color-primary);  /* Fundo rosa */
 }
 
-/* Specific styles for "Reserva Mesa" button */
+/* Estilos específicos para o botão "Reserva Mesa" */
 .reserva-btn {
-  text-transform: uppercase;  /* Uppercase text */
-  background-color: var(--color-secondary);  /* Green background */
+  text-transform: uppercase;  /* Texto em maiúsculas */
+  background-color: var(--color-secondary);  /* Fundo verde */
 }
 
-/* Hover effects for "Nuestra Carta" button */
+/* Efeitos de hover para o botão "Nuestra Carta" */
 .carta-btn:hover {
-  color: var(--color-white);  /* White text on hover */
-  border: 1px solid var(--color-primary);  /* Pink border */
-  background: transparent;  /* Transparent background on hover */
+  color: var(--color-white);  /* Texto branco ao passar o mouse */
+  border: 1px solid var(--color-primary);  /* Borda rosa */
+  background: transparent;  /* Fundo transparente ao passar o mouse */
 }
 
-/* Hover effects for "Reserva Mesa" button */
+/* Efeitos de hover para o botão "Reserva Mesa" */
 .reserva-btn:hover {
-  color: var(--color-white);  /* White text on hover */
-  border: 1px solid var(--color-secondary);  /* Green border */
-  background: transparent;  /* Transparent background on hover */
+  color: var(--color-white);  /* Texto branco ao passar o mouse */
+  border: 1px solid var(--color-secondary);  /* Borda verde */
+  background: transparent;  /* Fundo transparente ao passar o mouse */
+}
+
+/* media query */
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 5%;  /* Menos espaço à esquerda em telas menores */
+    padding-right: 5%;  /* Menos espaço à direita em telas menores */
+  }
+  .btn {
+    padding: 14px 22px;  /* Menor espaçamento interno para botões em telas menores */
+  }
 }

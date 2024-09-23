@@ -1,25 +1,87 @@
 nav {
     width: 100%;
+    /* Largura completa do nav */
     /* background: #333; */
     color: #fff;
-    padding: 4px 0;
-    position: fixed;
+    padding: 4px 0; /* Espaçamento interno vertical */
+    position: fixed; /* Fixa o nav no topo durante o scroll */
     top: 0;
     left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 10;
+    display: flex; /* Flexbox para alinhar os itens horizontalmente */
+    align-items: center; /* Alinhamento vertical dos itens ao centro */
+    justify-content: space-between; /* Espaço igual entre os itens (logo e menu) */
+    z-index: 10; /* Garante que o nav fique acima de outros elementos */
 }
 
 nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 5px 20px;
-    font-size: 16px;
+    display: inline-block; /* Exibe os itens do menu em linha */
+    list-style: none; /* Remove os marcadores de lista */
+    margin: 5px 20px; /* Margem ao redor de cada item */
+    font-size: 16px; /* Tamanho do texto dos itens do menu */
+}
+
+.btn {
+    font-size: 16px; /* Tamanho do texto do botão */
+    padding: 8px 12px; /* Espaçamento interno do botão */
 }
 
 .dark-nav {
-    background: #000;
-    transition: 0.5s;
+    background: #000; /* Fundo escuro quando o usuário faz scroll */
+    transition: 0.5s; /* Transição suave para mudança de fundo */
+}
+
+.menu-icon {
+    display: none; /* O ícone do menu está oculto por padrão */
+}
+
+/* Media query para telas médias (máximo de 1000px) */
+@media (max-width: 1000px) {
+    .logo {
+        width: 140px; /* Ajusta o tamanho da logo em telas menores */
+    }
+    nav ul li {
+        margin: 10px 15px; /* Reduz o espaçamento entre os itens do menu */
+    }
+}
+
+/* Media query para telas pequenas (máximo de 840px) */
+@media (max-width: 840px) {
+    nav {
+        padding: 15px 0; /* Aumenta o padding para nav em telas menores */
+    }
+    nav ul {
+        position: fixed; /* Fixa o menu lateralmente em telas pequenas */
+        top: 0;
+        right: 0px; /* Menu aparece no lado direito */
+        bottom: 0;
+        background: #0d0d0d; /* Fundo escuro para o menu móvel */
+        z-index: -1; /* Z-index para manter o menu no fundo até ser exibido */
+        width: 200px; /* Largura do menu no modo móvel */
+        padding-top: 70px; /* Espaçamento interno superior para os itens do menu */
+        transition: 0.5s; /* Transição suave para abrir e fechar o menu */
+    }
+    nav ul li {
+        display: block; /* Exibe os itens do menu em blocos no modo móvel */
+        margin: 25px 40px; /* Margem ao redor dos itens do menu */
+    }
+    .menu-icon {
+        display: block; /* Exibe o ícone do menu no modo móvel */
+        width: 30px; /* Tamanho do ícone do menu */
+        cursor: pointer; /* Cursor de pointer para o ícone do menu */
+    }
+    .hide-mobile-menu {
+        right: -200px; /* Esconde o menu fora da tela no modo móvel */
+    }
+}
+
+/* Media query para ajustar o botão do WhatsApp em telas pequenas */
+@media (max-width: 840px) {
+    .btn {
+        font-size: 12px; /* Tamanho menor para o texto do botão */
+        padding: 6px 10px; /* Menor espaçamento interno para o botão */
+    }
+    .btn svg {
+        width: 14px; /* Diminuindo o tamanho do ícone */
+        height: 14px; /* Ajuste proporcional da altura do ícone */
+    }
 }
