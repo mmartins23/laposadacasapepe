@@ -8,8 +8,16 @@ const Hero = () => {
       <div className='hero-text'>
         <h1>La Posada Casa Pepe</h1>
         <p>Desde 1846, elaborando comida casera con los más altos estándares de calidad.</p>
-        <button className='btn carta-btn'>Nuestra Carta<MdMenuBook /></button>
-        <button className='btn reserva-btn'>Reserva Mesa<MdOutlineArrowCircleRight /></button>
+        <a href="../../assets/laPosadaMenu.pdf" target="_blank" rel="noopener noreferrer">
+          <button className='btn carta-btn'>
+            Nuestra Carta<MdMenuBook />
+          </button>
+        </a>
+        <a href="https://wa.me/34653838263" target="_blank" rel="noopener noreferrer">
+          <button className='btn reserva-btn'>
+            Reserva Mesa<MdOutlineArrowCircleRight />
+          </button>
+        </a>
       </div>
     </div>
   )
