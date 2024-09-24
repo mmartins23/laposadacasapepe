@@ -1,5 +1,6 @@
 import { MdMenuBook } from "react-icons/md";
 import { MdOutlineArrowCircleRight } from "react-icons/md";
+import LaPosadaMenu from '../../assets/laPosadaMenu.pdf'
 import './Hero.css';
 
 const Hero = () => {
@@ -8,7 +9,7 @@ const Hero = () => {
       <div className='hero-text'>
         <h1>La Posada Casa Pepe</h1>
         <p>Desde 1846, elaborando comida casera con los más altos estándares de calidad.</p>
-        <a href="../../assets/laPosadaMenu.pdf" target="_blank" rel="noopener noreferrer">
+        <a href={LaPosadaMenu} target="_blank" rel="noopener noreferrer">
           <button className='btn carta-btn'>
             Nuestra Carta<MdMenuBook />
           </button>
