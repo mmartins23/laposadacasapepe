@@ -8,17 +8,35 @@ const Footer = () => {
             {/* Social Media Icons */}
             <div className="social-icons">
                 {/* Facebook Link */}
-                <a href="https://www.facebook.com/p/Restaurante-La-Posada-100063636669626/" target="_blank" rel="noopener noreferrer" className="facebook">
+                <a 
+                    href="https://www.facebook.com/p/Restaurante-La-Posada-100063636669626/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="facebook" 
+                    aria-label="Visita nuestra página de Facebook - Restaurante La Posada"
+                >
                     <FaFacebookSquare />
                 </a>
 
                 {/* Instagram Link */}
-                <a href="https://www.instagram.com/laposadacasapepe/" target="_blank" rel="noopener noreferrer" className="instagram">
+                <a 
+                    href="https://www.instagram.com/laposadacasapepe/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="instagram" 
+                    aria-label="Visita nuestra cuenta de Instagram - La Posada Casa Pepe"
+                >
                     <FaInstagramSquare />
                 </a>
 
                 {/* Tripadvisor Link */}
-                <a href="https://www.tripadvisor.es/Restaurant_Review-g2102293-d6681221-Reviews-La_Posada-Abanilla.html" target="_blank" rel="noopener noreferrer" className="tripadvisor">
+                <a 
+                    href="https://www.tripadvisor.es/Restaurant_Review-g2102293-d6681221-Reviews-La_Posada-Abanilla.html" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="tripadvisor" 
+                    aria-label="Ver opiniones en TripAdvisor - Restaurante La Posada"
+                >
                     <FaTripadvisor />
                 </a>
             </div>

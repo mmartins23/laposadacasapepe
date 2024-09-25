@@ -1,8 +1,7 @@
 import './Contact.css';
 import msg_icon from '../../assets/msg-icon.png';
-import { SiFacebook, SiWhatsapp, SiGooglemaps } from "react-icons/si"; import { IoMdClock } from "react-icons/io";
-
-
+import { SiFacebook, SiWhatsapp, SiGooglemaps } from "react-icons/si"; 
+import { IoMdClock } from "react-icons/io";
 
 const Contact = () => {
   return (
@@ -12,22 +11,40 @@ const Contact = () => {
         <p>No dudes en comunicarte con nosotros. Tus comentarios, preguntas y sugerencias son importantes para nosotros, ya que nos esforzamos por brindar un servicio excepcional en nuestro restaurante. Encuentra nuestra información de contacto a continuación.</p>
         <ul>
           <li>
-            <a href="https://www.facebook.com/profile.php?id=100063636669626" target="_blank" rel="noopener noreferrer">
+            <a 
+              href="https://www.facebook.com/profile.php?id=100063636669626" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="Visita nuestra página de Facebook - Restaurante La Posada"
+            >
               <span className="facebook"><SiFacebook /></span> Restaurante La Posada
             </a>
           </li>
           <li>
-            <a href="https://wa.me/34653838263" target="_blank" rel="noopener noreferrer">
+            <a 
+              href="https://wa.me/34653838263" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="Enviar un mensaje por WhatsApp al +34 653 83 82 63"
+            >
               <span className="whatsapp"><SiWhatsapp /></span> +34 653 83 82 63
             </a>
           </li>
-          <li><span className="timer"><IoMdClock /></span>Jueves a Domingo: 13:00 - 16:00</li>
           <li>
-            <a href="https://maps.app.goo.gl/WQLMBdXU3pHkZJ8h7" target="_blank" rel="noopener noreferrer">
-              <span className="googlemaps"><SiGooglemaps /></span>Calle Francisco Salzillo 22, Abanilla<br /> Murcia, 30640
+            <span className="timer"><IoMdClock /></span>
+            Jueves a Domingo: 13:00 - 16:00
+          </li>
+          <li>
+            <a 
+              href="https://maps.app.goo.gl/WQLMBdXU3pHkZJ8h7" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="Ver la ubicación en Google Maps - Calle Francisco Salzillo 22, Abanilla, Murcia"
+            >
+              <span className="googlemaps"><SiGooglemaps /></span>
+              Calle Francisco Salzillo 22, Abanilla<br /> Murcia, 30640
             </a>
           </li>
-
         </ul>
       </div>
       <div className='contact-col'>
