@@ -16,10 +16,10 @@ import menu_12 from '../../assets/menu12.jpg';
 // Define os pratos e suas categorias
 const images = [
   { src: menu_1, text: 'Croquetas de jamón ibérico', category: 'Aperitivos' },
-  { src: menu_2, text: 'Huevos rotos con jamón ibérico', category: 'Aperitivos' },
+  { src: menu_2, text: 'Gambón con salsa de anchoas y base de almendras', category: 'Aperitivos' },
   { src: menu_3, text: 'Pincho de gambon y salsa de anchoas', category: 'Aperitivos' },
   { src: menu_4, text: 'Entrecot de vaca madurada', category: 'Platos Principales' },
-  { src: menu_5, text: 'Chuleton de vaca madurada', category: 'Platos Principales' },
+  { src: menu_5, text: 'Atún de ijada', category: 'Platos Principales' },
   { src: menu_6, text: 'Rodaballo a la brasa', category: 'Platos Principales' },
   { src: menu_7, text: 'Tortilleras', category: 'Aperitivos' },
   { src: menu_8, text: 'Huevos con bechamel', category: 'Aperitivos' },
