@@ -2,7 +2,7 @@ import { MdMenuBook, MdOutlineArrowCircleRight } from 'react-icons/md'
 import bgImage from '../../assets/laposada_background.jpeg'
 import laPosadaMenu from '../../assets/laPosadaMenu.pdf'
 
-const Hero = () => {
+const Hero = (): JSX.Element => {
   return (
     <div
       id="Hero"

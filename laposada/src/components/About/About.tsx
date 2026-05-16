@@ -1,6 +1,12 @@
 import aboutImg from '../../assets/laposada_historia.jpeg'
 
-const About = () => {
+const HISTORY_PARAGRAPHS: string[] = [
+  'Restaurante La Posada es el más antiguo del pueblo de Abanilla, el edificio tiene más de dos siglos construido, y data del 1856 como posada. Eran de las pocas posadas que existían por la zona, antiguamente llegaban los carruajes con las mulas, cargados con productos agrícolas y entraban al abrevadero a beber agua, lo que es hoy el patio ajardinado del restaurante, el posadero atendía a los caballos mientras sus dueños subían a las habitaciones a descansar.',
+  'Lugar de encuentro de estos comerciantes y viajeros que contaban sus peripecias a los lugareños. Hoy en día se conoce como Posada Casa Pepe y es un Restaurante en el que destacan sus dos salones, el de invierno y un precioso patio ajardinado para primavera y verano, aunque recientemente se ha climatizado para que se pueda disfrutar todo el año.',
+  'Para más información, síguenos a través del Facebook Restaurante La Posada.',
+]
+
+const About = (): JSX.Element => {
   return (
     <div
       id="El Restaurante"
@@ -15,23 +21,11 @@ const About = () => {
           La apuesta culinaria familiar, transmitiendo los secretos de las mejores recetas de
           generación en generación
         </h2>
-        <p className="text-[#676767] mb-[15px] max-[800px]:text-sm">
-          Restaurante La Posada es el más antiguo del pueblo de Abanilla, el edificio tiene más de
-          dos siglos construido, y data del 1856 como posada. Eran de las pocas posadas que existían
-          por la zona, antiguamente llegaban los carruajes con las mulas, cargados con productos
-          agrícolas y entraban al abrevadero a beber agua, lo que es hoy el patio ajardinado del
-          restaurante, el posadero atendía a los caballos mientras sus dueños subían a las
-          habitaciones a descansar.
-        </p>
-        <p className="text-[#676767] mb-[15px] max-[800px]:text-sm">
-          Lugar de encuentro de estos comerciantes y viajeros que contaban sus peripecias a los
-          lugareños. Hoy en día se conoce como Posada Casa Pepe y es un Restaurante en el que
-          destacan sus dos salones, el de invierno y un precioso patio ajardinado para primavera y
-          verano, aunque recientemente se ha climatizado para que se pueda disfrutar todo el año.
-        </p>
-        <p className="text-[#676767] mb-[15px] max-[800px]:text-sm">
-          Para más información, síguenos a través del Facebook Restaurante La Posada.
-        </p>
+        {HISTORY_PARAGRAPHS.map((text: string) => (
+          <p key={text.slice(0, 30)} className="text-[#676767] mb-[15px] max-[800px]:text-sm">
+            {text}
+          </p>
+        ))}
       </div>
     </div>
   )

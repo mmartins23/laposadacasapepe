@@ -1,17 +1,27 @@
+import { useState, useEffect } from 'react'
 import { MdOutlineFoodBank, MdOutlineWhatsapp } from 'react-icons/md'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
 
-const Navbar = () => {
-  const [sticky, setSticky] = useState(false)
-  const [mobileMenu, setMobileMenu] = useState(false)
+const NAV_LINKS: { label: string; to: string; offset: number }[] = [
+  { label: 'El Restaurante', to: 'El Restaurante', offset: -260 },
+  { label: 'Gastronomía', to: 'Gastromonia', offset: -260 },
+  { label: 'Menú', to: 'Menu', offset: -220 },
+  { label: 'Equipo', to: 'Equipo', offset: -220 },
+  { label: 'Contacto', to: 'Contacto', offset: -200 },
+]
+
+const Navbar = (): JSX.Element => {
+  const [sticky, setSticky] = useState<boolean>(false)
+  const [mobileMenu, setMobileMenu] = useState<boolean>(false)
 
   useEffect(() => {
-    const handleScroll = () => setSticky(window.scrollY > 50)
+    const handleScroll = (): void => setSticky(window.scrollY > 50)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  const toggleMenu = (): void => setMobileMenu((prev) => !prev)
 
   return (
     <nav
@@ -30,31 +40,16 @@ const Navbar = () => {
           nav:flex nav:static nav:items-center nav:w-auto nav:bg-transparent nav:pt-0 nav:z-auto
           ${mobileMenu ? 'right-0' : 'right-[-200px]'}`}
       >
-        <li className="block my-6 mx-10 nav:inline-block nav:my-[5px] nav:mx-5 nav:text-base">
-          <Link to="El Restaurante" smooth={true} offset={-260} duration={500}>
-            El Restaurante
-          </Link>
-        </li>
-        <li className="block my-6 mx-10 nav:inline-block nav:my-[5px] nav:mx-5 nav:text-base">
-          <Link to="Gastromonia" smooth={true} offset={-260} duration={500}>
-            Gastronomía
-          </Link>
-        </li>
-        <li className="block my-6 mx-10 nav:inline-block nav:my-[5px] nav:mx-5 nav:text-base">
-          <Link to="Menu" smooth={true} offset={-220} duration={500}>
-            Menú
-          </Link>
-        </li>
-        <li className="block my-6 mx-10 nav:inline-block nav:my-[5px] nav:mx-5 nav:text-base">
-          <Link to="Equipo" smooth={true} offset={-220} duration={500}>
-            Equipo
-          </Link>
-        </li>
-        <li className="block my-6 mx-10 nav:inline-block nav:my-[5px] nav:mx-5 nav:text-base">
-          <Link to="Contacto" smooth={true} offset={-200} duration={500}>
-            Contacto
-          </Link>
-        </li>
+        {NAV_LINKS.map(({ label, to, offset }) => (
+          <li
+            key={to}
+            className="block my-6 mx-10 nav:inline-block nav:my-[5px] nav:mx-5 nav:text-base"
+          >
+            <Link to={to} smooth={true} offset={offset} duration={500}>
+              {label}
+            </Link>
+          </li>
+        ))}
         <li className="block my-6 mx-10 nav:inline-block nav:my-[5px] nav:mx-5">
           <a href="https://wa.me/34653838263" target="_blank" rel="noopener noreferrer">
             <button className="flex items-center gap-1 bg-white text-[#212121] px-3 py-2 text-xs nav:text-base nav:px-3 nav:py-2 rounded-[30px] border-0 cursor-pointer">
@@ -67,7 +62,7 @@ const Navbar = () => {
 
       <span
         className="block w-[30px] cursor-pointer nav:hidden"
-        onClick={() => setMobileMenu(!mobileMenu)}
+        onClick={toggleMenu}
         aria-label="Abrir menú"
       >
         <GiHamburgerMenu />

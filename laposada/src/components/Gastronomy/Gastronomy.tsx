@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import type { Dish, DishCategory, GastronomyFilter } from '../../types'
 import menu1 from '../../assets/menu1.jpg'
 import menu2 from '../../assets/menu2.jpg'
 import menu3 from '../../assets/menu3.jpg'
@@ -12,15 +13,7 @@ import menu10 from '../../assets/menu10.jpg'
 import menu11 from '../../assets/menu11.jpg'
 import menu12 from '../../assets/menu12.jpg'
 
-type Category = 'Todos' | 'Aperitivos' | 'Platos Principales' | 'Postres'
-
-interface Dish {
-  src: string
-  text: string
-  category: Exclude<Category, 'Todos'>
-}
-
-const dishes: Dish[] = [
+const DISHES: Dish[] = [
   { src: menu1, text: 'Croquetas de jamón ibérico', category: 'Aperitivos' },
   { src: menu2, text: 'Gambas Roja', category: 'Aperitivos' },
   { src: menu3, text: 'Pincho de gambon y salsa de anchoas', category: 'Aperitivos' },
@@ -35,31 +28,34 @@ const dishes: Dish[] = [
   { src: menu12, text: 'Dama de la posada', category: 'Postres' },
 ]
 
-const categories: Category[] = ['Todos', 'Aperitivos', 'Platos Principales', 'Postres']
+const FILTERS: GastronomyFilter[] = ['Todos', 'Aperitivos', 'Platos Principales', 'Postres']
 
-const Gastronomy = () => {
-  const [activeCategory, setActiveCategory] = useState<Category>('Todos')
+const filterDishes = (dishes: Dish[], filter: GastronomyFilter): Dish[] =>
+  filter === 'Todos' ? dishes : dishes.filter((d: Dish) => d.category === (filter as DishCategory))
 
-  const filtered = activeCategory === 'Todos' ? dishes : dishes.filter((d) => d.category === activeCategory)
+const Gastronomy = (): JSX.Element => {
+  const [activeFilter, setActiveFilter] = useState<GastronomyFilter>('Todos')
+
+  const visibleDishes: Dish[] = filterDishes(DISHES, activeFilter)
 
   return (
     <div id="Gastromonia" className="my-[80px] mx-auto w-[90%] text-center">
       <div className="mb-5 max-[480px]:flex max-[480px]:flex-col max-[480px]:items-center">
-        {categories.map((cat) => (
+        {FILTERS.map((filter: GastronomyFilter) => (
           <button
-            key={cat}
-            onClick={() => setActiveCategory(cat)}
+            key={filter}
+            onClick={() => setActiveFilter(filter)}
             className={`px-5 py-[10px] mr-[10px] mb-[10px] rounded-[20px] border-none text-base cursor-pointer transition-colors duration-300
               max-[480px]:w-full max-[480px]:mr-0 max-[480px]:py-[15px] max-[480px]:text-sm
-              ${activeCategory === cat ? 'bg-primary text-white' : 'bg-[#d8d3d3] hover:bg-primary hover:text-white'}`}
+              ${activeFilter === filter ? 'bg-primary text-white' : 'bg-[#d8d3d3] hover:bg-primary hover:text-white'}`}
           >
-            {cat}
+            {filter}
           </button>
         ))}
       </div>
 
       <div className="flex flex-wrap gap-5 justify-center">
-        {filtered.map((dish) => (
+        {visibleDishes.map((dish: Dish) => (
           <div
             key={dish.text}
             className="relative w-[calc(33.333%-20px)] mb-5 rounded-[10px] box-border

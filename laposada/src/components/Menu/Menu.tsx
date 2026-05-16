@@ -1,12 +1,6 @@
-interface MenuItem {
-  name: string
-  price: number
-  note?: string
-  sections: { heading: string; content: string }[]
-  recommended?: boolean
-}
+import type { MenuItem, MenuSection } from '../../types'
 
-const menuItems: MenuItem[] = [
+const MENU_ITEMS: MenuItem[] = [
   {
     name: 'Menú Degustación',
     price: 30,
@@ -37,8 +31,7 @@ const menuItems: MenuItem[] = [
       { heading: 'POSTRES', content: 'Postres caseros a elegir.' },
       {
         heading: 'BEBIDAS',
-        content:
-          'Agua | Refrescos | Cerveza | Vino Blanco, Rosado y Tinto R. Duero (1botella x 2 pers.) | Café.',
+        content: 'Agua | Refrescos | Cerveza | Vino Blanco, Rosado y Tinto R. Duero (1botella x 2 pers.) | Café.',
       },
     ],
   },
@@ -59,8 +52,7 @@ const menuItems: MenuItem[] = [
       { heading: 'POSTRES', content: 'Postres caseros a elegir.' },
       {
         heading: 'BEBIDAS',
-        content:
-          'Agua | Refrescos | Cerveza | Vino Blanco, Rosado y Tinto R. Duero (1botella x 2 pers.) | Café.',
+        content: 'Agua | Refrescos | Cerveza | Vino Blanco, Rosado y Tinto R. Duero (1botella x 2 pers.) | Café.',
       },
     ],
   },
@@ -83,20 +75,16 @@ const menuItems: MenuItem[] = [
       { heading: 'POSTRES', content: 'Dama de la posada.' },
       {
         heading: 'BEBIDAS',
-        content:
-          'Agua | Refrescos | Cerveza | Vino Blanco, Rosado y Tinto R. Duero (1botella x 2 pers.) | Café.',
+        content: 'Agua | Refrescos | Cerveza | Vino Blanco, Rosado y Tinto R. Duero (1botella x 2 pers.) | Café.',
       },
     ],
   },
 ]
 
-const Menu = () => {
+const Menu = (): JSX.Element => {
   return (
-    <div
-      id="Menu"
-      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-10"
-    >
-      {menuItems.map((item) => (
+    <div id="Menu" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-10">
+      {MENU_ITEMS.map((item: MenuItem) => (
         <div
           key={item.name}
           className={`bg-[#f9f9f9] p-5 rounded-[8px] shadow-[0_4px_8px_rgba(0,0,0,0.1)] text-center text-[#4a4a4a] transition-all duration-300 hover:-translate-y-[5px] hover:shadow-[0_6px_12px_rgba(0,0,0,0.15)]
@@ -110,7 +98,7 @@ const Menu = () => {
           {item.note && (
             <p className="text-base my-[10px] leading-[1.6] whitespace-pre-line">{item.note}</p>
           )}
-          {item.sections.map(({ heading, content }) => (
+          {item.sections.map(({ heading, content }: MenuSection) => (
             <div key={heading}>
               <h5 className="text-[18px] mt-[15px] text-secondary">{heading}</h5>
               <p className="text-base my-[10px] leading-[1.6]">{content}</p>
