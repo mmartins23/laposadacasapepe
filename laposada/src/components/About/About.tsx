@@ -1,4 +1,4 @@
-import aboutImg from '../../assets/laposada_historia.jpeg'
+import aboutImg from '@/assets/laposada_historia.jpeg'
 
 const HISTORY_PARAGRAPHS: string[] = [
   'Restaurante La Posada es el más antiguo del pueblo de Abanilla, el edificio tiene más de dos siglos construido, y data del 1856 como posada. Eran de las pocas posadas que existían por la zona, antiguamente llegaban los carruajes con las mulas, cargados con productos agrícolas y entraban al abrevadero a beber agua, lo que es hoy el patio ajardinado del restaurante, el posadero atendía a los caballos mientras sus dueños subían a las habitaciones a descansar.',

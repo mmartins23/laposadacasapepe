@@ -1,4 +1,4 @@
-import teamPhoto from '../../assets/laposada_team.png'
+import teamPhoto from '@/assets/laposada_team.png'
 
 const TEAM_PARAGRAPHS: string[] = [
   'El restaurante trabaja con el concepto de calidad extrema, no solo en lo que respecta a la atención al cliente y toda la experiencia que tendrá en el restaurante, sino principalmente cuando hablamos de materias primas. La carne y la comida de la más alta calidad siempre están en el menú de La Posada Casa Pepe. Esto significa que el restaurante puede mantener su condición de uno de los principales atractivos de la ciudad de Murcia, al tiempo que garantiza una experiencia gastronómica diferenciada para todos los que lo visitan.',

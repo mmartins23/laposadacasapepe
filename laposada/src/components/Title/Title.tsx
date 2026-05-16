@@ -1,4 +1,4 @@
-import type { TitleProps } from '../../types'
+import type { TitleProps } from '@/types'
 
 const Title = ({ subtitle, title }: TitleProps): JSX.Element => {
   return (

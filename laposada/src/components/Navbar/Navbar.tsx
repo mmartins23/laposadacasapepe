@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { MdOutlineFoodBank, MdOutlineWhatsapp } from 'react-icons/md'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Link } from 'react-scroll'
-import useSticky from '../../hooks/useSticky'
+import useSticky from '@/hooks/useSticky'
 
 const NAV_LINKS: { label: string; to: string; offset: number }[] = [
   { label: 'El Restaurante', to: 'El Restaurante', offset: -260 },
@@ -18,6 +18,14 @@ const Navbar = (): JSX.Element => {
 
   const toggleMenu = (): void => setMobileMenu((prev) => !prev)
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent): void => {
+      if (e.key === 'Escape' && mobileMenu) setMobileMenu(false)
+    }
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [mobileMenu])
+
   return (
     <nav
       className={`w-full text-white py-1 px-[5%] fixed top-0 left-0 flex items-center justify-between z-10 transition-all duration-500 ${
@@ -31,6 +39,7 @@ const Navbar = (): JSX.Element => {
       </span>
 
       <ul
+        id="main-nav-menu"
         className={`fixed top-0 bottom-0 bg-[#0d0d0d] w-[200px] pt-[70px] z-[-1] transition-all duration-500
           nav:flex nav:static nav:items-center nav:w-auto nav:bg-transparent nav:pt-0 nav:z-auto
           ${mobileMenu ? 'right-0' : 'right-[-200px]'}`}
@@ -59,6 +68,8 @@ const Navbar = (): JSX.Element => {
         className="block w-[30px] cursor-pointer nav:hidden"
         onClick={toggleMenu}
         aria-label="Abrir menú"
+        aria-expanded={mobileMenu}
+        aria-controls="main-nav-menu"
       >
         <GiHamburgerMenu />
       </span>

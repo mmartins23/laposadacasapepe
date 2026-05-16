@@ -1,7 +1,7 @@
-import type { WelcomeCard } from '../../types'
-import news1 from '../../assets/laposada_news1.jpg'
-import news2 from '../../assets/laposasa_news2.jpg'
-import news3 from '../../assets/laposada_news3.jpg'
+import type { WelcomeCard } from '@/types'
+import news1 from '@/assets/laposada_news1.jpg'
+import news2 from '@/assets/laposasa_news2.jpg'
+import news3 from '@/assets/laposada_news3.jpg'
 
 const CARDS: WelcomeCard[] = [
   { src: news1, alt: 'La Posada Restaurant', caption: '¡Tu Mesa Te Espera!' },

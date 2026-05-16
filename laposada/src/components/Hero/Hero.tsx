@@ -1,6 +1,6 @@
 import { MdMenuBook, MdOutlineArrowCircleRight } from 'react-icons/md'
-import bgImage from '../../assets/laposada_background.jpeg'
-import laPosadaMenu from '../../assets/laPosadaMenu.pdf'
+import bgImage from '@/assets/laposada_background.jpeg'
+import laPosadaMenu from '@/assets/laPosadaMenu.pdf'
 
 const Hero = (): JSX.Element => {
   return (
