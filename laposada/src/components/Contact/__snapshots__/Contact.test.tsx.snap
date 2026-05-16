@@ -1,0 +1,159 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Contact > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="my-[80px] mx-auto max-w-[90%] flex justify-between flex-wrap max-[768px]:flex-col max-[768px]:items-center"
+    id="Contacto"
+  >
+    <div
+      class="flex-[0_0_48%] text-[#676767] mb-5 max-[768px]:flex-[0_0_100%]"
+    >
+      <h3
+        class="text-[#000f38] font-medium text-[25px] flex items-center mb-5"
+      >
+        Envíanos un mensaje
+        <img
+          alt="Email Icon"
+          class="w-[35px] ml-[10px]"
+          src="/src/assets/msg-icon.png"
+        />
+      </h3>
+      <p
+        class="max-w-[450px]"
+      >
+        No dudes en comunicarte con nosotros. Tus comentarios, preguntas y sugerencias son importantes para nosotros, ya que nos esforzamos por brindar un servicio excepcional en nuestro restaurante. Encuentra nuestra información de contacto a continuación.
+      </p>
+      <ul>
+        <li
+          class="flex items-center my-5"
+        >
+          <a
+            aria-label="Visita nuestra página de Facebook - Restaurante La Posada"
+            class="flex items-center"
+            href="https://www.facebook.com/profile.php?id=100063636669626"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              class="w-5 mr-[10px] text-[#1877f2] text-2xl"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                role="img"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+                />
+              </svg>
+            </span>
+            Restaurante La Posada
+          </a>
+        </li>
+        <li
+          class="flex items-center my-5"
+        >
+          <a
+            aria-label="Enviar un mensaje por WhatsApp al +34 653 83 82 63"
+            class="flex items-center"
+            href="https://wa.me/34653838263"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              class="w-5 mr-[10px] text-[#25d366] text-2xl"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                role="img"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                />
+              </svg>
+            </span>
+            +34 653 83 82 63
+          </a>
+        </li>
+        <li
+          class="flex items-center my-5"
+        >
+          <span
+            class="w-5 mr-[10px] text-[#181716] text-2xl"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M403.1 108.9c-81.2-81.2-212.9-81.2-294.2 0-81.3 81.2-81.2 212.9 0 294.2 81.2 81.2 212.9 81.2 294.2 0 81.2-81.2 81.2-213 0-294.2zm-16.5 53.2c7.6-4.4 17.5-1.8 21.9 5.9 4.4 7.6 1.8 17.5-5.9 21.9-7.6 4.4-17.5 1.8-21.9-5.9-4.4-7.6-1.8-17.5 5.9-21.9zM80 256c0-8.8 7.2-16 16-16s16 7.2 16 16-7.2 16-16 16-16-7.2-16-16zm45.4 93.9c-7.6 4.4-17.5 1.8-21.9-5.9-4.4-7.6-1.8-17.5 5.9-21.9 7.6-4.4 17.5-1.8 21.9 5.9 4.4 7.6 1.8 17.5-5.9 21.9zm5.9-165.9c-4.4 7.6-14.2 10.3-21.9 5.9-7.6-4.4-10.3-14.2-5.9-21.9 4.4-7.6 14.2-10.3 21.9-5.9 7.7 4.4 10.3 14.3 5.9 21.9zm36.7-80.4c7.6-4.4 17.5-1.8 21.9 5.9 4.4 7.6 1.8 17.5-5.9 21.9s-17.5 1.8-21.9-5.9c-4.4-7.7-1.7-17.5 5.9-21.9zm-7.8 110.7l15.6-26.6 95.2 56.9V384h-31V260.6l-79.8-46.3zm29.7 188.3c-4.4 7.6-14.2 10.3-21.9 5.9s-10.3-14.2-5.9-21.9c4.4-7.6 14.2-10.3 21.9-5.9 7.6 4.4 10.3 14.2 5.9 21.9zM256 432c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zm0-320c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zm88 296.4c-7.6 4.4-17.5 1.8-21.9-5.9-4.4-7.6-1.8-17.5 5.9-21.9 7.6-4.4 17.5-1.8 21.9 5.9 4.4 7.7 1.7 17.5-5.9 21.9zm5.9-283c-4.4 7.6-14.2 10.3-21.9 5.9s-10.3-14.2-5.9-21.9c4.4-7.6 14.2-10.3 21.9-5.9s10.3 14.3 5.9 21.9zM408.4 344c-4.4 7.6-14.2 10.3-21.9 5.9-7.6-4.4-10.3-14.2-5.9-21.9 4.4-7.6 14.2-10.3 21.9-5.9 7.7 4.4 10.3 14.3 5.9 21.9zm7.6-72c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16z"
+              />
+            </svg>
+          </span>
+          Jueves a Domingo: 13:00 - 16:00
+        </li>
+        <li
+          class="flex items-center my-5"
+        >
+          <a
+            aria-label="Ver la ubicación en Google Maps - Calle Francisco Salzillo 22, Abanilla, Murcia"
+            class="flex items-center"
+            href="https://maps.app.goo.gl/WQLMBdXU3pHkZJ8h7"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              class="w-5 mr-[10px] text-[#db4437] text-2xl"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                role="img"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.527 4.799c1.212 2.608.937 5.678-.405 8.173-1.101 2.047-2.744 3.74-4.098 5.614-.619.858-1.244 1.75-1.669 2.727-.141.325-.263.658-.383.992-.121.333-.224.673-.34 1.008-.109.314-.236.684-.627.687h-.007c-.466-.001-.579-.53-.695-.887-.284-.874-.581-1.713-1.019-2.525-.51-.944-1.145-1.817-1.79-2.671L19.527 4.799zM8.545 7.705l-3.959 4.707c.724 1.54 1.821 2.863 2.871 4.18.247.31.494.622.737.936l4.984-5.925-.029.01c-1.741.601-3.691-.291-4.392-1.987a3.377 3.377 0 0 1-.209-.716c-.063-.437-.077-.761-.004-1.198l.001-.007zM5.492 3.149l-.003.004c-1.947 2.466-2.281 5.88-1.117 8.77l4.785-5.689-.058-.05-3.607-3.035zM14.661.436l-3.838 4.563a.295.295 0 0 1 .027-.01c1.6-.551 3.403.15 4.22 1.626.176.319.323.683.377 1.045.068.446.085.773.012 1.22l-.003.016 3.836-4.561A8.382 8.382 0 0 0 14.67.439l-.009-.003zM9.466 5.868L14.162.285l-.047-.012A8.31 8.31 0 0 0 11.986 0a8.439 8.439 0 0 0-6.169 2.766l-.016.018 3.665 3.084z"
+                />
+              </svg>
+            </span>
+            Calle Francisco Salzillo 22, Abanilla
+            <br />
+             Murcia, 30640
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="flex-[0_0_48%] mb-5 max-[768px]:flex-[0_0_100%]"
+    >
+      <iframe
+        allowfullscreen=""
+        class="border-0 w-full h-[300px] mt-5"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3135.148176902746!2d-1.0436340843945726!3d38.20645639497786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6391c029d067a7%3A0x9b9ef112d993607a!2sCalle%20Francisco%20Salzillo%2C%2022%2C%2030640%20Abanilla%2C%20Murcia!5e0!3m2!1sen!2ses!4v1621701316369!5m2!1sen!2ses"
+        title="Google Map"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,227 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Gastronomy > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="my-[80px] mx-auto w-[90%] text-center"
+    id="Gastromonia"
+  >
+    <div
+      class="mb-5 max-[480px]:flex max-[480px]:flex-col max-[480px]:items-center"
+    >
+      <button
+        class="px-5 py-[10px] mr-[10px] mb-[10px] rounded-[20px] border-none text-base cursor-pointer transition-colors duration-300
+              max-[480px]:w-full max-[480px]:mr-0 max-[480px]:py-[15px] max-[480px]:text-sm
+              bg-primary text-white"
+      >
+        Todos
+      </button>
+      <button
+        class="px-5 py-[10px] mr-[10px] mb-[10px] rounded-[20px] border-none text-base cursor-pointer transition-colors duration-300
+              max-[480px]:w-full max-[480px]:mr-0 max-[480px]:py-[15px] max-[480px]:text-sm
+              bg-[#d8d3d3] hover:bg-primary hover:text-white"
+      >
+        Aperitivos
+      </button>
+      <button
+        class="px-5 py-[10px] mr-[10px] mb-[10px] rounded-[20px] border-none text-base cursor-pointer transition-colors duration-300
+              max-[480px]:w-full max-[480px]:mr-0 max-[480px]:py-[15px] max-[480px]:text-sm
+              bg-[#d8d3d3] hover:bg-primary hover:text-white"
+      >
+        Platos Principales
+      </button>
+      <button
+        class="px-5 py-[10px] mr-[10px] mb-[10px] rounded-[20px] border-none text-base cursor-pointer transition-colors duration-300
+              max-[480px]:w-full max-[480px]:mr-0 max-[480px]:py-[15px] max-[480px]:text-sm
+              bg-[#d8d3d3] hover:bg-primary hover:text-white"
+      >
+        Postres
+      </button>
+    </div>
+    <div
+      class="flex flex-wrap gap-5 justify-center"
+    >
+      <div
+        class="relative w-[calc(33.333%-20px)] mb-5 rounded-[10px] box-border
+              max-[1024px]:w-[calc(50%-20px)] max-[768px]:w-[calc(100%-20px)]"
+      >
+        <img
+          alt="Croquetas de jamón ibérico"
+          class="w-full rounded-[10px]"
+          src="/src/assets/menu1.jpg"
+        />
+        <div
+          class="absolute bottom-[10px] left-0 right-0 text-white bg-[rgba(0,0,0,0.5)] py-[10px] text-base text-center rounded-b-[10px]"
+        >
+          Croquetas de jamón ibérico
+        </div>
+      </div>
+      <div
+        class="relative w-[calc(33.333%-20px)] mb-5 rounded-[10px] box-border
+              max-[1024px]:w-[calc(50%-20px)] max-[768px]:w-[calc(100%-20px)]"
+      >
+        <img
+          alt="Gambas Roja"
+          class="w-full rounded-[10px]"
+          src="/src/assets/menu2.jpg"
+        />
+        <div
+          class="absolute bottom-[10px] left-0 right-0 text-white bg-[rgba(0,0,0,0.5)] py-[10px] text-base text-center rounded-b-[10px]"
+        >
+          Gambas Roja
+        </div>
+      </div>
+      <div
+        class="relative w-[calc(33.333%-20px)] mb-5 rounded-[10px] box-border
+              max-[1024px]:w-[calc(50%-20px)] max-[768px]:w-[calc(100%-20px)]"
+      >
+        <img
+          alt="Pincho de gambon y salsa de anchoas"
+          class="w-full rounded-[10px]"
+          src="/src/assets/menu3.jpg"
+        />
+        <div
+          class="absolute bottom-[10px] left-0 right-0 text-white bg-[rgba(0,0,0,0.5)] py-[10px] text-base text-center rounded-b-[10px]"
+        >
+          Pincho de gambon y salsa de anchoas
+        </div>
+      </div>
+      <div
+        class="relative w-[calc(33.333%-20px)] mb-5 rounded-[10px] box-border
+              max-[1024px]:w-[calc(50%-20px)] max-[768px]:w-[calc(100%-20px)]"
+      >
+        <img
+          alt="Entrecot de vaca madurada"
+          class="w-full rounded-[10px]"
+          src="/src/assets/menu4.jpg"
+        />
+        <div
+          class="absolute bottom-[10px] left-0 right-0 text-white bg-[rgba(0,0,0,0.5)] py-[10px] text-base text-center rounded-b-[10px]"
+        >
+          Entrecot de vaca madurada
+        </div>
+      </div>
+      <div
+        class="relative w-[calc(33.333%-20px)] mb-5 rounded-[10px] box-border
+              max-[1024px]:w-[calc(50%-20px)] max-[768px]:w-[calc(100%-20px)]"
+      >
+        <img
+          alt="Atún de ijada"
+          class="w-full rounded-[10px]"
+          src="/src/assets/menu5.jpg"
+        />
+        <div
+          class="absolute bottom-[10px] left-0 right-0 text-white bg-[rgba(0,0,0,0.5)] py-[10px] text-base text-center rounded-b-[10px]"
+        >
+          Atún de ijada
+        </div>
+      </div>
+      <div
+        class="relative w-[calc(33.333%-20px)] mb-5 rounded-[10px] box-border
+              max-[1024px]:w-[calc(50%-20px)] max-[768px]:w-[calc(100%-20px)]"
+      >
+        <img
+          alt="Rodaballo a la brasa"
+          class="w-full rounded-[10px]"
+          src="/src/assets/menu6.jpg"
+        />
+        <div
+          class="absolute bottom-[10px] left-0 right-0 text-white bg-[rgba(0,0,0,0.5)] py-[10px] text-base text-center rounded-b-[10px]"
+        >
+          Rodaballo a la brasa
+        </div>
+      </div>
+      <div
+        class="relative w-[calc(33.333%-20px)] mb-5 rounded-[10px] box-border
+              max-[1024px]:w-[calc(50%-20px)] max-[768px]:w-[calc(100%-20px)]"
+      >
+        <img
+          alt="Tortilleras"
+          class="w-full rounded-[10px]"
+          src="/src/assets/menu7.jpg"
+        />
+        <div
+          class="absolute bottom-[10px] left-0 right-0 text-white bg-[rgba(0,0,0,0.5)] py-[10px] text-base text-center rounded-b-[10px]"
+        >
+          Tortilleras
+        </div>
+      </div>
+      <div
+        class="relative w-[calc(33.333%-20px)] mb-5 rounded-[10px] box-border
+              max-[1024px]:w-[calc(50%-20px)] max-[768px]:w-[calc(100%-20px)]"
+      >
+        <img
+          alt="Huevos con bechamel"
+          class="w-full rounded-[10px]"
+          src="/src/assets/menu8.jpg"
+        />
+        <div
+          class="absolute bottom-[10px] left-0 right-0 text-white bg-[rgba(0,0,0,0.5)] py-[10px] text-base text-center rounded-b-[10px]"
+        >
+          Huevos con bechamel
+        </div>
+      </div>
+      <div
+        class="relative w-[calc(33.333%-20px)] mb-5 rounded-[10px] box-border
+              max-[1024px]:w-[calc(50%-20px)] max-[768px]:w-[calc(100%-20px)]"
+      >
+        <img
+          alt="Salmorejo con jamón ibérico"
+          class="w-full rounded-[10px]"
+          src="/src/assets/menu9.jpg"
+        />
+        <div
+          class="absolute bottom-[10px] left-0 right-0 text-white bg-[rgba(0,0,0,0.5)] py-[10px] text-base text-center rounded-b-[10px]"
+        >
+          Salmorejo con jamón ibérico
+        </div>
+      </div>
+      <div
+        class="relative w-[calc(33.333%-20px)] mb-5 rounded-[10px] box-border
+              max-[1024px]:w-[calc(50%-20px)] max-[768px]:w-[calc(100%-20px)]"
+      >
+        <img
+          alt="Gambas al ajillo"
+          class="w-full rounded-[10px]"
+          src="/src/assets/menu10.jpg"
+        />
+        <div
+          class="absolute bottom-[10px] left-0 right-0 text-white bg-[rgba(0,0,0,0.5)] py-[10px] text-base text-center rounded-b-[10px]"
+        >
+          Gambas al ajillo
+        </div>
+      </div>
+      <div
+        class="relative w-[calc(33.333%-20px)] mb-5 rounded-[10px] box-border
+              max-[1024px]:w-[calc(50%-20px)] max-[768px]:w-[calc(100%-20px)]"
+      >
+        <img
+          alt="Arroz de conejo y serrenas"
+          class="w-full rounded-[10px]"
+          src="/src/assets/menu11.jpg"
+        />
+        <div
+          class="absolute bottom-[10px] left-0 right-0 text-white bg-[rgba(0,0,0,0.5)] py-[10px] text-base text-center rounded-b-[10px]"
+        >
+          Arroz de conejo y serrenas
+        </div>
+      </div>
+      <div
+        class="relative w-[calc(33.333%-20px)] mb-5 rounded-[10px] box-border
+              max-[1024px]:w-[calc(50%-20px)] max-[768px]:w-[calc(100%-20px)]"
+      >
+        <img
+          alt="Dama de la posada"
+          class="w-full rounded-[10px]"
+          src="/src/assets/menu12.jpg"
+        />
+        <div
+          class="absolute bottom-[10px] left-0 right-0 text-white bg-[rgba(0,0,0,0.5)] py-[10px] text-base text-center rounded-b-[10px]"
+        >
+          Dama de la posada
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
