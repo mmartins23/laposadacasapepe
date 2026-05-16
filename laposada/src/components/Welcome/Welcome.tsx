@@ -24,6 +24,7 @@ const Welcome = (): JSX.Element => {
             src={src}
             alt={alt}
             className="w-full h-[375px] object-cover rounded-[10px] block"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-[rgba(0,15,152,0.3)] rounded-[10px] flex items-center justify-center text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 cursor-pointer">
             <p>{caption}</p>

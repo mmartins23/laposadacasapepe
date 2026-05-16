@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { MdOutlineFoodBank, MdOutlineWhatsapp } from 'react-icons/md'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Link } from 'react-scroll'
+import useSticky from '../../hooks/useSticky'
 
 const NAV_LINKS: { label: string; to: string; offset: number }[] = [
   { label: 'El Restaurante', to: 'El Restaurante', offset: -260 },
@@ -12,14 +13,8 @@ const NAV_LINKS: { label: string; to: string; offset: number }[] = [
 ]
 
 const Navbar = (): JSX.Element => {
-  const [sticky, setSticky] = useState<boolean>(false)
+  const sticky = useSticky()
   const [mobileMenu, setMobileMenu] = useState<boolean>(false)
-
-  useEffect(() => {
-    const handleScroll = (): void => setSticky(window.scrollY > 50)
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
 
   const toggleMenu = (): void => setMobileMenu((prev) => !prev)
 

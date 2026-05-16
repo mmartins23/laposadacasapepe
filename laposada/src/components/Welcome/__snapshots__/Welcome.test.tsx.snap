@@ -12,6 +12,7 @@ exports[`Welcome > matches snapshot 1`] = `
       <img
         alt="La Posada Restaurant"
         class="w-full h-[375px] object-cover rounded-[10px] block"
+        loading="lazy"
         src="/src/assets/laposada_news1.jpg"
       />
       <div
@@ -28,6 +29,7 @@ exports[`Welcome > matches snapshot 1`] = `
       <img
         alt="La Posada Restaurant Garden"
         class="w-full h-[375px] object-cover rounded-[10px] block"
+        loading="lazy"
         src="/src/assets/laposasa_news2.jpg"
       />
       <div
@@ -44,6 +46,7 @@ exports[`Welcome > matches snapshot 1`] = `
       <img
         alt="La Posada Restaurant Barbeque"
         class="w-full h-[375px] object-cover rounded-[10px] block"
+        loading="lazy"
         src="/src/assets/laposada_news3.jpg"
       />
       <div

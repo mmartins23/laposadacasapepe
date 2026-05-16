@@ -23,6 +23,7 @@ const Team = (): JSX.Element => {
           src={teamPhoto}
           alt="Team at La Posada"
           className="w-full rounded-[10px] shadow-[0_4px_8px_rgba(0,0,0,0.1)]"
+          loading="lazy"
         />
       </div>
     </div>

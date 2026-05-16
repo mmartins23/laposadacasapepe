@@ -61,7 +61,7 @@ const Gastronomy = (): JSX.Element => {
             className="relative w-[calc(33.333%-20px)] mb-5 rounded-[10px] box-border
               max-[1024px]:w-[calc(50%-20px)] max-[768px]:w-[calc(100%-20px)]"
           >
-            <img src={dish.src} alt={dish.text} className="w-full rounded-[10px]" />
+            <img src={dish.src} alt={dish.text} className="w-full rounded-[10px]" loading="lazy" />
             <div className="absolute bottom-[10px] left-0 right-0 text-white bg-[rgba(0,0,0,0.5)] py-[10px] text-base text-center rounded-b-[10px]">
               {dish.text}
             </div>

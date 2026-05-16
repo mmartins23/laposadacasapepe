@@ -13,7 +13,7 @@ const About = (): JSX.Element => {
       className="my-[100px] mx-auto flex items-center justify-between w-[90%] max-[1024px]:flex-col"
     >
       <div className="flex-[0_0_40%] max-[1024px]:flex-[0_0_100%] max-[1024px]:my-5 max-[1024px]:order-2">
-        <img src={aboutImg} alt="La Posada Historia" className="w-full rounded-[10px]" />
+        <img src={aboutImg} alt="La Posada Historia" className="w-full rounded-[10px]" loading="lazy" />
       </div>
       <div className="flex-[0_0_56%] max-[1024px]:flex-[0_0_100%] max-[1024px]:order-1">
         <h3 className="font-semibold text-base text-[#141212]">NUESTRA HISTORIA</h3>
