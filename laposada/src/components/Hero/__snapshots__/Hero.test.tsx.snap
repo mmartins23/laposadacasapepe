@@ -1,0 +1,84 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Hero > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full min-h-screen text-white flex items-center justify-center"
+    id="Hero"
+  >
+    <div
+      class="text-center max-w-[800px] flex flex-col items-center"
+    >
+      <h1
+        class="text-[60px] font-semibold max-[768px]:text-[40px]"
+      >
+        La Posada Casa Pepe
+      </h1>
+      <p
+        class="max-w-[700px] mt-[10px] mb-[20px] leading-snug"
+      >
+        Desde 1846, elaborando comida casera con los más altos estándares de calidad.
+      </p>
+      <a
+        href="/src/assets/laPosadaMenu.pdf"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <button
+          class="flex items-center gap-2 bg-primary text-[#212121] uppercase px-[25px] py-[14px] text-base rounded-[30px] border-0 cursor-pointer mb-[10px] transition-all duration-300 hover:text-white hover:bg-transparent hover:border hover:border-primary"
+        >
+          Nuestra Carta
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z"
+            />
+            <path
+              d="M17.5 10.5c.88 0 1.73.09 2.5.26V9.24c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99zM13 12.49v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26V11.9c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.3-4.5.83zM17.5 14.33c-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26v-1.52c-.79-.16-1.64-.24-2.5-.24z"
+            />
+          </svg>
+        </button>
+      </a>
+      <a
+        href="https://wa.me/34653838263"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <button
+          class="flex items-center gap-2 bg-secondary text-[#212121] uppercase px-[25px] py-[14px] text-base rounded-[30px] border-0 cursor-pointer transition-all duration-300 hover:text-white hover:bg-transparent hover:border hover:border-secondary"
+        >
+          Reserva Mesa
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12s4.48 10 10 10 10-4.48 10-10zM4 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8-8-3.58-8-8zm12 0-4 4-1.41-1.41L12.17 13H8v-2h4.17l-1.59-1.59L12 8l4 4z"
+            />
+          </svg>
+        </button>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

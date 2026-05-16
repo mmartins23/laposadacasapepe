@@ -1,0 +1,59 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Welcome > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="my-[80px] mx-auto w-[90%] flex items-center justify-between flex-wrap max-[650px]:flex-col"
+    id="El Restaurante"
+  >
+    <div
+      class="relative flex-[0_0_31%] mb-[20px] max-[650px]:flex-[0_0_100%] max-[650px]:my-5 group"
+    >
+      <img
+        alt="La Posada Restaurant"
+        class="w-full h-[375px] object-cover rounded-[10px] block"
+        src="/src/assets/laposada_news1.jpg"
+      />
+      <div
+        class="absolute inset-0 bg-[rgba(0,15,152,0.3)] rounded-[10px] flex items-center justify-center text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 cursor-pointer"
+      >
+        <p>
+          ¡Tu Mesa Te Espera!
+        </p>
+      </div>
+    </div>
+    <div
+      class="relative flex-[0_0_31%] mb-[20px] max-[650px]:flex-[0_0_100%] max-[650px]:my-5 group"
+    >
+      <img
+        alt="La Posada Restaurant Garden"
+        class="w-full h-[375px] object-cover rounded-[10px] block"
+        src="/src/assets/laposasa_news2.jpg"
+      />
+      <div
+        class="absolute inset-0 bg-[rgba(0,15,152,0.3)] rounded-[10px] flex items-center justify-center text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 cursor-pointer"
+      >
+        <p>
+          Disfruta Nuestro Jardín
+        </p>
+      </div>
+    </div>
+    <div
+      class="relative flex-[0_0_31%] mb-[20px] max-[650px]:flex-[0_0_100%] max-[650px]:my-5 group"
+    >
+      <img
+        alt="La Posada Restaurant Barbeque"
+        class="w-full h-[375px] object-cover rounded-[10px] block"
+        src="/src/assets/laposada_news3.jpg"
+      />
+      <div
+        class="absolute inset-0 bg-[rgba(0,15,152,0.3)] rounded-[10px] flex items-center justify-center text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 cursor-pointer"
+      >
+        <p>
+          Auténtico Sabor a la Brasa
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,89 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-/* Variáveis de cor para melhor consistência */
-:root {
-  --color-primary: #e43c5c;  /* Cor primária (usada no botão "Nuestra Carta") */
-  --color-secondary: #719A0B;  /* Cor secundária (usada no botão "Reserva Mesa") */
-  --color-white: #fff;  /* Cor branca */
-  --color-black: #212121;  /* Cor preta */
-  --color-bg: #f5f5f5;  /* Cor de fundo */
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;  /* Ajusta o box model para incluir padding e border na largura total */
-  font-family: "Outfit", sans-serif;  /* Fonte padrão para todos os elementos */
-}
-
-/* Estilo para o fundo do body */
-body {
-  background: var(--color-bg);  /* Define a cor de fundo usando a variável */
-}
-
-/* Estilos padrão para links */
-a {
-  text-decoration: none;  /* Remove o sublinhado dos links */
-  color: inherit;  /* Mantém a cor do texto do link */
-  line-height: 1;  /* Define a altura da linha */
-  cursor: pointer;  /* Muda o cursor para indicar que é clicável */
-}
-
-/* Padding geral para o container */
-.container {
-  padding-left: 10%;  /* Espaçamento à esquerda */
-  padding-right: 10%;  /* Espaçamento à direita */
-}
-
-/* Estilos gerais para botões */
-.btn {
-  background: var(--color-white);  /* Fundo branco */
-  color: var(--color-black);  /* Texto preto */
-  padding: 14px 25px;  /* Espaçamento interno */
-  font-size: 16px;  /* Tamanho da fonte */
-  border-radius: 30px;  /* Bordas arredondadas */
-  cursor: pointer;  /* Muda o cursor para indicar que é clicável */
-  border: 0;  /* Remove a borda */
-  outline: 0;  /* Remove a borda de foco */
-  display: block;  /* Exibe como bloco */
-  margin: 10px 0;  /* Botões aparecem abaixo uns dos outros */
-  justify-content: center;  /* Centraliza o conteúdo */
-  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;  /* Efeito suave na transição */
-}
-
-/* Estilos específicos para o botão "Nuestra Carta" */
-.carta-btn {
-  text-transform: uppercase;  /* Texto em maiúsculas */
-  background-color: var(--color-primary);  /* Fundo rosa */
-}
-
-/* Estilos específicos para o botão "Reserva Mesa" */
-.reserva-btn {
-  text-transform: uppercase;  /* Texto em maiúsculas */
-  background-color: var(--color-secondary);  /* Fundo verde */
-}
-
-/* Efeitos de hover para o botão "Nuestra Carta" */
-.carta-btn:hover {
-  color: var(--color-white);  /* Texto branco ao passar o mouse */
-  border: 1px solid var(--color-primary);  /* Borda rosa */
-  background: transparent;  /* Fundo transparente ao passar o mouse */
-}
-
-/* Efeitos de hover para o botão "Reserva Mesa" */
-.reserva-btn:hover {
-  color: var(--color-white);  /* Texto branco ao passar o mouse */
-  border: 1px solid var(--color-secondary);  /* Borda verde */
-  background: transparent;  /* Fundo transparente ao passar o mouse */
-}
-
-/* media query */
-@media (max-width: 1200px) {
-  .container {
-    padding-left: 5%;  /* Menos espaço à esquerda em telas menores */
-    padding-right: 5%;  /* Menos espaço à direita em telas menores */
+@layer base {
+  * {
+    font-family: 'Outfit', sans-serif;
   }
-  .btn {
-    padding: 14px 22px;  /* Menor espaçamento interno para botões em telas menores */
+  body {
+    background-color: #f5f5f5;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
   }
 }

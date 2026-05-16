@@ -1,0 +1,296 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Menu > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-10"
+    id="Menu"
+  >
+    <div
+      class="bg-[#f9f9f9] p-5 rounded-[8px] shadow-[0_4px_8px_rgba(0,0,0,0.1)] text-center text-[#4a4a4a] transition-all duration-300 hover:-translate-y-[5px] hover:shadow-[0_6px_12px_rgba(0,0,0,0.15)]
+            "
+    >
+      <h3
+        class="text-2xl mb-[10px] text-primary"
+      >
+        Menú Degustación
+      </h3>
+      <h4
+        class="text-[32px] text-primary my-[15px]"
+      >
+        <sup>
+          €
+        </sup>
+        30
+      </h4>
+      <p
+        class="text-base my-[10px] leading-[1.6] whitespace-pre-line"
+      >
+        Con una bebida - 30€
+Con todas bebida (Incluye café) - 35€
+      </p>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          ENTRANTES
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Cuatro deliciosos entrantes de la casa| Tomate con capellán y olivas.
+        </p>
+      </div>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          PLATO PRINCIPAL
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Degustación de carnes y embutidos a la brasa.
+        </p>
+      </div>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          POSTRES
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Postres a elegir.
+        </p>
+      </div>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          BEBIDAS
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Agua | Refresco | Cerveza | Vinos de la casa.
+        </p>
+      </div>
+    </div>
+    <div
+      class="bg-[#f9f9f9] p-5 rounded-[8px] shadow-[0_4px_8px_rgba(0,0,0,0.1)] text-center text-[#4a4a4a] transition-all duration-300 hover:-translate-y-[5px] hover:shadow-[0_6px_12px_rgba(0,0,0,0.15)]
+            border-2 border-primary bg-white"
+    >
+      <h3
+        class="text-2xl mb-[10px] text-primary"
+      >
+        Menú Especial
+      </h3>
+      <h4
+        class="text-[32px] text-primary my-[15px]"
+      >
+        <sup>
+          €
+        </sup>
+        42
+      </h4>
+      <p
+        class="text-base my-[10px] leading-[1.6] whitespace-pre-line"
+      >
+        MÍN 2 PERSONAS
+      </p>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          ENTRANTES
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Cuencos con 3 salsas y pan casero | Carpaccio de salmón | Alcachofa rellena (según temporada) | Huevos con bechamel | Gambas al ajillo | Ensalada de capellán.
+        </p>
+      </div>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          PLATO A ELEGIR
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Cordero | Pollo | Churrasco de ternera | Secreto al romero | Costillar de cerdo con salsa BBQ | Solomillo al romero | Pescados frescos. (Todo a la brasa acompañado de patatas fritas y pimientos de padrón).
+        </p>
+      </div>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          POSTRES
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Postres caseros a elegir.
+        </p>
+      </div>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          BEBIDAS
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Agua | Refrescos | Cerveza | Vino Blanco, Rosado y Tinto R. Duero (1botella x 2 pers.) | Café.
+        </p>
+      </div>
+    </div>
+    <div
+      class="bg-[#f9f9f9] p-5 rounded-[8px] shadow-[0_4px_8px_rgba(0,0,0,0.1)] text-center text-[#4a4a4a] transition-all duration-300 hover:-translate-y-[5px] hover:shadow-[0_6px_12px_rgba(0,0,0,0.15)]
+            "
+    >
+      <h3
+        class="text-2xl mb-[10px] text-primary"
+      >
+        Menú de Arroz
+      </h3>
+      <h4
+        class="text-[32px] text-primary my-[15px]"
+      >
+        <sup>
+          €
+        </sup>
+        40
+      </h4>
+      <p
+        class="text-base my-[10px] leading-[1.6] whitespace-pre-line"
+      >
+        MÍN 2 PERSONAS
+      </p>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          ENTRANTES
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Cuencos con 3 salsas y pan casero | Berenjena Chips | Jamón Ibérico | Quesos variados con mermeladas caseras | Ensalada de capellán.
+        </p>
+      </div>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          PLATO PRINCIPAL
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Arroz de conejo con serranas a la leña con sarmientos.
+        </p>
+      </div>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          POSTRES
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Postres caseros a elegir.
+        </p>
+      </div>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          BEBIDAS
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Agua | Refrescos | Cerveza | Vino Blanco, Rosado y Tinto R. Duero (1botella x 2 pers.) | Café.
+        </p>
+      </div>
+    </div>
+    <div
+      class="bg-[#f9f9f9] p-5 rounded-[8px] shadow-[0_4px_8px_rgba(0,0,0,0.1)] text-center text-[#4a4a4a] transition-all duration-300 hover:-translate-y-[5px] hover:shadow-[0_6px_12px_rgba(0,0,0,0.15)]
+            border-2 border-primary bg-white"
+    >
+      <h3
+        class="text-2xl mb-[10px] text-primary"
+      >
+        Menú La Posada
+      </h3>
+      <h4
+        class="text-[32px] text-primary my-[15px]"
+      >
+        <sup>
+          €
+        </sup>
+        53
+      </h4>
+      <p
+        class="text-base my-[10px] leading-[1.6] whitespace-pre-line"
+      >
+        MÍN 2 PERSONAS
+      </p>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          ENTRANTES
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Cuencos con 3 salsas y pan casero | Jamón Ibérico | Quesos variados con mermelada casera | Huevos con bechamel | Gamba roja | Ensalada con brotes tiernos, con salmón, fruta, queso parmesano y frutos secos.
+        </p>
+      </div>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          PLATO A ELEGIR
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Entrecot de vaca extra madurada | Solomillo al romero | Pollo | Secreto al romero | Costillar con salsa barbacoa | Costillas de cordero | Churrasco de ternera | Lubina, dorada o rodaballo | (Todo a la brasa acompañado de patatas fritas y pimientos de padrón).
+        </p>
+      </div>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          POSTRES
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Dama de la posada.
+        </p>
+      </div>
+      <div>
+        <h5
+          class="text-[18px] mt-[15px] text-secondary"
+        >
+          BEBIDAS
+        </h5>
+        <p
+          class="text-base my-[10px] leading-[1.6]"
+        >
+          Agua | Refrescos | Cerveza | Vino Blanco, Rosado y Tinto R. Duero (1botella x 2 pers.) | Café.
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
