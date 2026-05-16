@@ -25,5 +25,14 @@ export default defineConfig({
     setupFiles: './src/setupTests.ts',
     css: false,
     exclude: ['**/node_modules/**', '**/e2e/**'],
+    coverage: {
+      provider: 'v8',
+      thresholds: {
+        lines: 70,
+        branches: 60,
+        functions: 70,
+        statements: 70,
+      },
+    },
   },
 })

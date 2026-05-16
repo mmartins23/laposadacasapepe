@@ -47,6 +47,40 @@ test.describe('Homepage', () => {
   })
 })
 
+test.describe('Additional checks', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto('/')
+  })
+
+  test('filter buttons work in Gastronomy section', async ({ page }) => {
+    await page.getByRole('button', { name: 'Aperitivos' }).click()
+    const images = page.locator('#Gastromonia img')
+    const count = await images.count()
+    expect(count).toBeLessThan(12)
+    expect(count).toBeGreaterThan(0)
+    // Switch to Platos Principales
+    await page.getByRole('button', { name: 'Platos Principales' }).click()
+    const mainCount = await images.count()
+    expect(mainCount).toBeGreaterThan(0)
+    // Switch back to Todos
+    await page.getByRole('button', { name: 'Todos' }).click()
+    await expect(images).toHaveCount(12)
+  })
+
+  test('WhatsApp link has correct href', async ({ page }) => {
+    const whatsappLink = page.locator('a[href*="wa.me"]').first()
+    await expect(whatsappLink).toHaveAttribute('href', 'https://wa.me/34653838263')
+  })
+
+  test('page has no broken main sections - all section ids exist', async ({ page }) => {
+    await expect(page.locator('#Gastromonia')).toBeVisible()
+    await expect(page.locator('#Equipo')).toBeVisible()
+    await expect(page.locator('#Contacto')).toBeVisible()
+    // Check main-content id exists (accessibility)
+    await expect(page.locator('#main-content')).toBeAttached()
+  })
+})
+
 test.describe('Mobile menu', () => {
   test.use({ viewport: { width: 375, height: 812 } })
 

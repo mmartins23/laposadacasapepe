@@ -1,0 +1,16 @@
+{
+  "name": "La Posada Casa Pepe",
+  "short_name": "La Posada",
+  "description": "Restaurante La Posada Casa Pepe - Abanilla, Murcia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e43c5c",
+  "icons": [
+    {
+      "src": "/assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

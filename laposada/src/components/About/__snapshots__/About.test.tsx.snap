@@ -3,8 +3,10 @@
 exports[`About > matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="my-[100px] mx-auto flex items-center justify-between w-[90%] max-[1024px]:flex-col"
+    aria-label="El Restaurante"
+    class="my-[100px] mx-auto flex items-center justify-between w-[90%] max-[1024px]:flex-col transition-all duration-700 opacity-0 translate-y-8"
     id="El Restaurante"
+    role="region"
   >
     <div
       class="flex-[0_0_40%] max-[1024px]:flex-[0_0_100%] max-[1024px]:my-5 max-[1024px]:order-2"

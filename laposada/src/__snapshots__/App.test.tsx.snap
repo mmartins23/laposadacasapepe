@@ -2,116 +2,126 @@
 
 exports[`App > matches snapshot 1`] = `
 <DocumentFragment>
+  <a
+    class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:text-primary focus:px-4 focus:py-2 focus:rounded"
+    href="#main-content"
+  >
+    Saltar para o conteúdo
+  </a>
   <div>
     <nav
       data-testid="navbar"
     >
       Navbar
     </nav>
-    <section
-      data-testid="hero"
+    <main
+      id="main-content"
     >
-      Hero
-    </section>
-    <div
-      class="px-[10%] max-[1200px]:px-[5%]"
-    >
-      <div
-        class="text-center text-[#141212] text-[15px] font-semibold uppercase mt-[70px] mb-[30px]"
-      >
-        <p>
-          ¡Bienvenido a La Posada!
-        </p>
-        <h2
-          class="text-[32px] text-primary normal-case mt-[5px]"
-        >
-          Donde la Tradición se Encuentra con la Innovación
-        </h2>
-      </div>
       <section
-        data-testid="welcome"
+        data-testid="hero"
       >
-        Welcome
-      </section>
-      <section
-        data-testid="about"
-      >
-        About
+        Hero
       </section>
       <div
-        class="text-center text-[#141212] text-[15px] font-semibold uppercase mt-[70px] mb-[30px]"
+        class="px-[10%] max-[1200px]:px-[5%]"
       >
-        <p>
-          Gastronomía
-        </p>
-        <h2
-          class="text-[32px] text-primary normal-case mt-[5px]"
+        <div
+          class="text-center text-[#141212] text-[15px] font-semibold uppercase mt-[70px] mb-[30px]"
         >
-          Más de 25 platos a elegir, algunas de nuestras sugerencias
-        </h2>
-      </div>
-      <section
-        data-testid="gastronomy"
-      >
-        Gastronomy
-      </section>
-      <div
-        class="text-center text-[#141212] text-[15px] font-semibold uppercase mt-[70px] mb-[30px]"
-      >
-        <p>
-          Nuestro Menú
-        </p>
-        <h2
-          class="text-[32px] text-primary normal-case mt-[5px]"
+          <p>
+            ¡Bienvenido a La Posada!
+          </p>
+          <h2
+            class="text-[32px] text-primary normal-case mt-[5px]"
+          >
+            Donde la Tradición se Encuentra con la Innovación
+          </h2>
+        </div>
+        <section
+          data-testid="welcome"
         >
-          Comparte momentos y sabores únicos con amigos y familia. ¡Te esperamos!
-        </h2>
-      </div>
-      <section
-        data-testid="menu"
-      >
-        Menu
-      </section>
-      <div
-        class="text-center text-[#141212] text-[15px] font-semibold uppercase mt-[70px] mb-[30px]"
-      >
-        <p>
-          Equipo
-        </p>
-        <h2
-          class="text-[32px] text-primary normal-case mt-[5px]"
+          Welcome
+        </section>
+        <section
+          data-testid="about"
         >
-          Gracias por tu visita! Vuelve pronto!
-        </h2>
-      </div>
-      <section
-        data-testid="team"
-      >
-        Team
-      </section>
-      <div
-        class="text-center text-[#141212] text-[15px] font-semibold uppercase mt-[70px] mb-[30px]"
-      >
-        <p>
-          Contacto
-        </p>
-        <h2
-          class="text-[32px] text-primary normal-case mt-[5px]"
+          About
+        </section>
+        <div
+          class="text-center text-[#141212] text-[15px] font-semibold uppercase mt-[70px] mb-[30px]"
         >
-          Haz tu reserva ahora y disfruta de los mejores platos de la Región de Murcia
-        </h2>
+          <p>
+            Gastronomía
+          </p>
+          <h2
+            class="text-[32px] text-primary normal-case mt-[5px]"
+          >
+            Más de 25 platos a elegir, algunas de nuestras sugerencias
+          </h2>
+        </div>
+        <section
+          data-testid="gastronomy"
+        >
+          Gastronomy
+        </section>
+        <div
+          class="text-center text-[#141212] text-[15px] font-semibold uppercase mt-[70px] mb-[30px]"
+        >
+          <p>
+            Nuestro Menú
+          </p>
+          <h2
+            class="text-[32px] text-primary normal-case mt-[5px]"
+          >
+            Comparte momentos y sabores únicos con amigos y familia. ¡Te esperamos!
+          </h2>
+        </div>
+        <section
+          data-testid="menu"
+        >
+          Menu
+        </section>
+        <div
+          class="text-center text-[#141212] text-[15px] font-semibold uppercase mt-[70px] mb-[30px]"
+        >
+          <p>
+            Equipo
+          </p>
+          <h2
+            class="text-[32px] text-primary normal-case mt-[5px]"
+          >
+            Gracias por tu visita! Vuelve pronto!
+          </h2>
+        </div>
+        <section
+          data-testid="team"
+        >
+          Team
+        </section>
+        <div
+          class="text-center text-[#141212] text-[15px] font-semibold uppercase mt-[70px] mb-[30px]"
+        >
+          <p>
+            Contacto
+          </p>
+          <h2
+            class="text-[32px] text-primary normal-case mt-[5px]"
+          >
+            Haz tu reserva ahora y disfruta de los mejores platos de la Región de Murcia
+          </h2>
+        </div>
+        <section
+          data-testid="contact"
+        >
+          Contact
+        </section>
+        <footer
+          data-testid="footer"
+        >
+          Footer
+        </footer>
       </div>
-      <section
-        data-testid="contact"
-      >
-        Contact
-      </section>
-      <footer
-        data-testid="footer"
-      >
-        Footer
-      </footer>
-    </div>
+    </main>
   </div>
 </DocumentFragment>
 `;

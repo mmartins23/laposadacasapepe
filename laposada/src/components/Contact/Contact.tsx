@@ -36,6 +36,8 @@ const Contact = (): JSX.Element => {
   return (
     <div
       id="Contacto"
+      role="region"
+      aria-label="Contacto"
       className="my-[80px] mx-auto max-w-[90%] flex justify-between flex-wrap max-[768px]:flex-col max-[768px]:items-center"
     >
       <div className="flex-[0_0_48%] text-[#676767] mb-5 max-[768px]:flex-[0_0_100%]">

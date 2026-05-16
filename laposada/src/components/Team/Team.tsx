@@ -1,4 +1,5 @@
 import teamPhoto from '@/assets/laposada_team.png'
+import useInView from '@/hooks/useInView'
 
 const TEAM_PARAGRAPHS: string[] = [
   'El restaurante trabaja con el concepto de calidad extrema, no solo en lo que respecta a la atención al cliente y toda la experiencia que tendrá en el restaurante, sino principalmente cuando hablamos de materias primas. La carne y la comida de la más alta calidad siempre están en el menú de La Posada Casa Pepe. Esto significa que el restaurante puede mantener su condición de uno de los principales atractivos de la ciudad de Murcia, al tiempo que garantiza una experiencia gastronómica diferenciada para todos los que lo visitan.',
@@ -6,10 +7,15 @@ const TEAM_PARAGRAPHS: string[] = [
 ]
 
 const Team = (): JSX.Element => {
+  const [ref, inView] = useInView()
+
   return (
     <div
+      ref={ref}
       id="Equipo"
-      className="px-[10%] max-[1200px]:px-[5%] py-[60px] flex justify-between items-center gap-10 max-[768px]:flex-col max-[768px]:text-center"
+      role="region"
+      aria-label="Equipo"
+      className={`px-[10%] max-[1200px]:px-[5%] py-[60px] flex justify-between items-center gap-10 max-[768px]:flex-col max-[768px]:text-center transition-all duration-700 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
     >
       <div className="flex-1 text-lg leading-[1.6] text-[#676767] max-[1024px]:text-base max-[768px]:text-[15px]">
         {TEAM_PARAGRAPHS.map((text: string) => (

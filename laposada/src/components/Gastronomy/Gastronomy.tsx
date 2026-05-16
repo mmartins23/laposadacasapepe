@@ -39,7 +39,7 @@ const Gastronomy = (): JSX.Element => {
   const visibleDishes: Dish[] = filterDishes(DISHES, activeFilter)
 
   return (
-    <div id="Gastromonia" className="my-[80px] mx-auto w-[90%] text-center">
+    <div id="Gastromonia" role="region" aria-label="Gastronomía" className="my-[80px] mx-auto w-[90%] text-center">
       <div className="mb-5 max-[480px]:flex max-[480px]:flex-col max-[480px]:items-center">
         {FILTERS.map((filter: GastronomyFilter) => (
           <button

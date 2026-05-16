@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
 import App from './App'
 
@@ -31,30 +31,31 @@ vi.mock('./components/Footer/Footer', () => ({
 }))
 
 describe('App', () => {
-  it('renders all main sections', () => {
+  it('renders all main sections', async () => {
     render(<App />)
     expect(screen.getByTestId('navbar')).toBeInTheDocument()
     expect(screen.getByTestId('hero')).toBeInTheDocument()
     expect(screen.getByTestId('welcome')).toBeInTheDocument()
     expect(screen.getByTestId('about')).toBeInTheDocument()
-    expect(screen.getByTestId('gastronomy')).toBeInTheDocument()
-    expect(screen.getByTestId('menu')).toBeInTheDocument()
-    expect(screen.getByTestId('team')).toBeInTheDocument()
-    expect(screen.getByTestId('contact')).toBeInTheDocument()
-    expect(screen.getByTestId('footer')).toBeInTheDocument()
+    await waitFor(() => expect(screen.getByTestId('gastronomy')).toBeInTheDocument())
+    await waitFor(() => expect(screen.getByTestId('menu')).toBeInTheDocument())
+    await waitFor(() => expect(screen.getByTestId('team')).toBeInTheDocument())
+    await waitFor(() => expect(screen.getByTestId('contact')).toBeInTheDocument())
+    await waitFor(() => expect(screen.getByTestId('footer')).toBeInTheDocument())
   })
 
-  it('renders section titles', () => {
+  it('renders section titles', async () => {
     render(<App />)
     expect(screen.getByText('¡Bienvenido a La Posada!')).toBeInTheDocument()
-    expect(screen.getByText('Gastronomía')).toBeInTheDocument()
-    expect(screen.getByText('Nuestro Menú')).toBeInTheDocument()
-    expect(screen.getByText('Equipo')).toBeInTheDocument()
-    expect(screen.getByText('Contacto')).toBeInTheDocument()
+    await waitFor(() => expect(screen.getByText('Gastronomía')).toBeInTheDocument())
+    await waitFor(() => expect(screen.getByText('Nuestro Menú')).toBeInTheDocument())
+    await waitFor(() => expect(screen.getByText('Equipo')).toBeInTheDocument())
+    await waitFor(() => expect(screen.getByText('Contacto')).toBeInTheDocument())
   })
 
-  it('matches snapshot', () => {
+  it('matches snapshot', async () => {
     const { asFragment } = render(<App />)
+    await waitFor(() => expect(screen.getByTestId('footer')).toBeInTheDocument())
     expect(asFragment()).toMatchSnapshot()
   })
 })
