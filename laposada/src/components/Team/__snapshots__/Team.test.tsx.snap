@@ -26,6 +26,7 @@ exports[`Team > matches snapshot 1`] = `
       <img
         alt="Team at La Posada"
         class="w-full rounded-[10px] shadow-[0_4px_8px_rgba(0,0,0,0.1)]"
+        loading="lazy"
         src="/src/assets/laposada_team.png"
       />
     </div>

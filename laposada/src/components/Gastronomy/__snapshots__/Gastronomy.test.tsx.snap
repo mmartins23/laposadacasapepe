@@ -48,6 +48,7 @@ exports[`Gastronomy > matches snapshot 1`] = `
         <img
           alt="Croquetas de jamón ibérico"
           class="w-full rounded-[10px]"
+          loading="lazy"
           src="/src/assets/menu1.jpg"
         />
         <div
@@ -63,6 +64,7 @@ exports[`Gastronomy > matches snapshot 1`] = `
         <img
           alt="Gambas Roja"
           class="w-full rounded-[10px]"
+          loading="lazy"
           src="/src/assets/menu2.jpg"
         />
         <div
@@ -78,6 +80,7 @@ exports[`Gastronomy > matches snapshot 1`] = `
         <img
           alt="Pincho de gambon y salsa de anchoas"
           class="w-full rounded-[10px]"
+          loading="lazy"
           src="/src/assets/menu3.jpg"
         />
         <div
@@ -93,6 +96,7 @@ exports[`Gastronomy > matches snapshot 1`] = `
         <img
           alt="Entrecot de vaca madurada"
           class="w-full rounded-[10px]"
+          loading="lazy"
           src="/src/assets/menu4.jpg"
         />
         <div
@@ -108,6 +112,7 @@ exports[`Gastronomy > matches snapshot 1`] = `
         <img
           alt="Atún de ijada"
           class="w-full rounded-[10px]"
+          loading="lazy"
           src="/src/assets/menu5.jpg"
         />
         <div
@@ -123,6 +128,7 @@ exports[`Gastronomy > matches snapshot 1`] = `
         <img
           alt="Rodaballo a la brasa"
           class="w-full rounded-[10px]"
+          loading="lazy"
           src="/src/assets/menu6.jpg"
         />
         <div
@@ -138,6 +144,7 @@ exports[`Gastronomy > matches snapshot 1`] = `
         <img
           alt="Tortilleras"
           class="w-full rounded-[10px]"
+          loading="lazy"
           src="/src/assets/menu7.jpg"
         />
         <div
@@ -153,6 +160,7 @@ exports[`Gastronomy > matches snapshot 1`] = `
         <img
           alt="Huevos con bechamel"
           class="w-full rounded-[10px]"
+          loading="lazy"
           src="/src/assets/menu8.jpg"
         />
         <div
@@ -168,6 +176,7 @@ exports[`Gastronomy > matches snapshot 1`] = `
         <img
           alt="Salmorejo con jamón ibérico"
           class="w-full rounded-[10px]"
+          loading="lazy"
           src="/src/assets/menu9.jpg"
         />
         <div
@@ -183,6 +192,7 @@ exports[`Gastronomy > matches snapshot 1`] = `
         <img
           alt="Gambas al ajillo"
           class="w-full rounded-[10px]"
+          loading="lazy"
           src="/src/assets/menu10.jpg"
         />
         <div
@@ -198,6 +208,7 @@ exports[`Gastronomy > matches snapshot 1`] = `
         <img
           alt="Arroz de conejo y serrenas"
           class="w-full rounded-[10px]"
+          loading="lazy"
           src="/src/assets/menu11.jpg"
         />
         <div
@@ -213,6 +224,7 @@ exports[`Gastronomy > matches snapshot 1`] = `
         <img
           alt="Dama de la posada"
           class="w-full rounded-[10px]"
+          loading="lazy"
           src="/src/assets/menu12.jpg"
         />
         <div

@@ -1,5 +1,5 @@
-import type { ContactEntry } from '../../types'
-import msgIcon from '../../assets/msg-icon.png'
+import type { ContactEntry } from '@/types'
+import msgIcon from '@/assets/msg-icon.png'
 import { SiFacebook, SiWhatsapp, SiGooglemaps } from 'react-icons/si'
 import { IoMdClock } from 'react-icons/io'
 

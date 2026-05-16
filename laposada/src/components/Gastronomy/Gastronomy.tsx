@@ -1,17 +1,17 @@
 import { useState } from 'react'
-import type { Dish, DishCategory, GastronomyFilter } from '../../types'
-import menu1 from '../../assets/menu1.jpg'
-import menu2 from '../../assets/menu2.jpg'
-import menu3 from '../../assets/menu3.jpg'
-import menu4 from '../../assets/menu4.jpg'
-import menu5 from '../../assets/menu5.jpg'
-import menu6 from '../../assets/menu6.jpg'
-import menu7 from '../../assets/menu7.jpg'
-import menu8 from '../../assets/menu8.jpg'
-import menu9 from '../../assets/menu9.jpg'
-import menu10 from '../../assets/menu10.jpg'
-import menu11 from '../../assets/menu11.jpg'
-import menu12 from '../../assets/menu12.jpg'
+import type { Dish, DishCategory, GastronomyFilter } from '@/types'
+import menu1 from '@/assets/menu1.jpg'
+import menu2 from '@/assets/menu2.jpg'
+import menu3 from '@/assets/menu3.jpg'
+import menu4 from '@/assets/menu4.jpg'
+import menu5 from '@/assets/menu5.jpg'
+import menu6 from '@/assets/menu6.jpg'
+import menu7 from '@/assets/menu7.jpg'
+import menu8 from '@/assets/menu8.jpg'
+import menu9 from '@/assets/menu9.jpg'
+import menu10 from '@/assets/menu10.jpg'
+import menu11 from '@/assets/menu11.jpg'
+import menu12 from '@/assets/menu12.jpg'
 
 const DISHES: Dish[] = [
   { src: menu1, text: 'Croquetas de jamón ibérico', category: 'Aperitivos' },
@@ -61,7 +61,7 @@ const Gastronomy = (): JSX.Element => {
             className="relative w-[calc(33.333%-20px)] mb-5 rounded-[10px] box-border
               max-[1024px]:w-[calc(50%-20px)] max-[768px]:w-[calc(100%-20px)]"
           >
-            <img src={dish.src} alt={dish.text} className="w-full rounded-[10px]" />
+            <img src={dish.src} alt={dish.text} className="w-full rounded-[10px]" loading="lazy" />
             <div className="absolute bottom-[10px] left-0 right-0 text-white bg-[rgba(0,0,0,0.5)] py-[10px] text-base text-center rounded-b-[10px]">
               {dish.text}
             </div>

@@ -1,4 +1,4 @@
-import type { MenuItem, MenuSection } from '../../types'
+import type { MenuItem, MenuSection } from '@/types'
 
 const MENU_ITEMS: MenuItem[] = [
   {

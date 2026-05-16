@@ -3,7 +3,6 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import Navbar from './Navbar'
 
 vi.mock('react-scroll', () => ({
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   Link: ({ children, smooth: _smooth, offset: _offset, duration: _duration, to: _to, ...props }: React.HTMLAttributes<HTMLAnchorElement> & { smooth?: boolean; offset?: number; duration?: number; to?: string }) => (
     <a {...props}>{children}</a>
   ),

@@ -1,4 +1,4 @@
-import type { SocialLink } from '../../types'
+import type { SocialLink } from '@/types'
 import { FaFacebookSquare, FaInstagramSquare, FaTripadvisor } from 'react-icons/fa'
 
 const SOCIAL_LINKS: SocialLink[] = [

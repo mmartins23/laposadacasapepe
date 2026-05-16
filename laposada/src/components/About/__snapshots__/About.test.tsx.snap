@@ -12,6 +12,7 @@ exports[`About > matches snapshot 1`] = `
       <img
         alt="La Posada Historia"
         class="w-full rounded-[10px]"
+        loading="lazy"
         src="/src/assets/laposada_historia.jpeg"
       />
     </div>
