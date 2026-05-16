@@ -1,20 +1,21 @@
+import type { WelcomeCard } from '../../types'
 import news1 from '../../assets/laposada_news1.jpg'
 import news2 from '../../assets/laposasa_news2.jpg'
 import news3 from '../../assets/laposada_news3.jpg'
 
-const cards = [
+const CARDS: WelcomeCard[] = [
   { src: news1, alt: 'La Posada Restaurant', caption: '¡Tu Mesa Te Espera!' },
   { src: news2, alt: 'La Posada Restaurant Garden', caption: 'Disfruta Nuestro Jardín' },
   { src: news3, alt: 'La Posada Restaurant Barbeque', caption: 'Auténtico Sabor a la Brasa' },
 ]
 
-const Welcome = () => {
+const Welcome = (): JSX.Element => {
   return (
     <div
       id="El Restaurante"
       className="my-[80px] mx-auto w-[90%] flex items-center justify-between flex-wrap max-[650px]:flex-col"
     >
-      {cards.map(({ src, alt, caption }) => (
+      {CARDS.map(({ src, alt, caption }: WelcomeCard) => (
         <div
           key={caption}
           className="relative flex-[0_0_31%] mb-[20px] max-[650px]:flex-[0_0_100%] max-[650px]:my-5 group"

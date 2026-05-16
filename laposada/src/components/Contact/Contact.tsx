@@ -1,8 +1,38 @@
+import type { ContactEntry } from '../../types'
 import msgIcon from '../../assets/msg-icon.png'
 import { SiFacebook, SiWhatsapp, SiGooglemaps } from 'react-icons/si'
 import { IoMdClock } from 'react-icons/io'
 
-const Contact = () => {
+const CONTACT_ENTRIES: ContactEntry[] = [
+  {
+    Icon: SiFacebook,
+    iconClass: 'text-[#1877f2]',
+    lines: ['Restaurante La Posada'],
+    href: 'https://www.facebook.com/profile.php?id=100063636669626',
+    ariaLabel: 'Visita nuestra página de Facebook - Restaurante La Posada',
+  },
+  {
+    Icon: SiWhatsapp,
+    iconClass: 'text-[#25d366]',
+    lines: ['+34 653 83 82 63'],
+    href: 'https://wa.me/34653838263',
+    ariaLabel: 'Enviar un mensaje por WhatsApp al +34 653 83 82 63',
+  },
+  {
+    Icon: IoMdClock,
+    iconClass: 'text-[#181716]',
+    lines: ['Jueves a Domingo: 13:00 - 16:00'],
+  },
+  {
+    Icon: SiGooglemaps,
+    iconClass: 'text-[#db4437]',
+    lines: ['Calle Francisco Salzillo 22, Abanilla', 'Murcia, 30640'],
+    href: 'https://maps.app.goo.gl/WQLMBdXU3pHkZJ8h7',
+    ariaLabel: 'Ver la ubicación en Google Maps - Calle Francisco Salzillo 22, Abanilla, Murcia',
+  },
+]
+
+const Contact = (): JSX.Element => {
   return (
     <div
       id="Contacto"
@@ -19,55 +49,42 @@ const Contact = () => {
           nuestro restaurante. Encuentra nuestra información de contacto a continuación.
         </p>
         <ul>
-          <li className="flex items-center my-5">
-            <a
-              href="https://www.facebook.com/profile.php?id=100063636669626"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visita nuestra página de Facebook - Restaurante La Posada"
-              className="flex items-center"
-            >
-              <span className="w-5 mr-[10px] text-[#1877f2] text-2xl">
-                <SiFacebook />
+          {CONTACT_ENTRIES.map((entry: ContactEntry) => {
+            const textContent = entry.lines.map((line: string, i: number) => (
+              <span key={line}>
+                {line}
+                {i < entry.lines.length - 1 && <br />}
               </span>
-              Restaurante La Posada
-            </a>
-          </li>
-          <li className="flex items-center my-5">
-            <a
-              href="https://wa.me/34653838263"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Enviar un mensaje por WhatsApp al +34 653 83 82 63"
-              className="flex items-center"
-            >
-              <span className="w-5 mr-[10px] text-[#25d366] text-2xl">
-                <SiWhatsapp />
+            ))
+
+            const iconEl = (
+              <span className={`w-5 mr-[10px] text-2xl ${entry.iconClass}`}>
+                <entry.Icon />
               </span>
-              +34 653 83 82 63
-            </a>
-          </li>
-          <li className="flex items-center my-5">
-            <span className="w-5 mr-[10px] text-[#181716] text-2xl">
-              <IoMdClock />
-            </span>
-            Jueves a Domingo: 13:00 - 16:00
-          </li>
-          <li className="flex items-center my-5">
-            <a
-              href="https://maps.app.goo.gl/WQLMBdXU3pHkZJ8h7"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Ver la ubicación en Google Maps - Calle Francisco Salzillo 22, Abanilla, Murcia"
-              className="flex items-center"
-            >
-              <span className="w-5 mr-[10px] text-[#db4437] text-2xl">
-                <SiGooglemaps />
-              </span>
-              Calle Francisco Salzillo 22, Abanilla
-              <br /> Murcia, 30640
-            </a>
-          </li>
+            )
+
+            return (
+              <li key={entry.lines[0]} className="flex items-center my-5">
+                {entry.href ? (
+                  <a
+                    href={entry.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={entry.ariaLabel}
+                    className="flex items-center"
+                  >
+                    {iconEl}
+                    {textContent}
+                  </a>
+                ) : (
+                  <>
+                    {iconEl}
+                    {textContent}
+                  </>
+                )}
+              </li>
+            )
+          })}
         </ul>
       </div>
       <div className="flex-[0_0_48%] mb-5 max-[768px]:flex-[0_0_100%]">

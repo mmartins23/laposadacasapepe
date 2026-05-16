@@ -36,7 +36,7 @@ exports[`Contact > matches snapshot 1`] = `
             target="_blank"
           >
             <span
-              class="w-5 mr-[10px] text-[#1877f2] text-2xl"
+              class="w-5 mr-[10px] text-2xl text-[#1877f2]"
             >
               <svg
                 fill="currentColor"
@@ -53,7 +53,9 @@ exports[`Contact > matches snapshot 1`] = `
                 />
               </svg>
             </span>
-            Restaurante La Posada
+            <span>
+              Restaurante La Posada
+            </span>
           </a>
         </li>
         <li
@@ -67,7 +69,7 @@ exports[`Contact > matches snapshot 1`] = `
             target="_blank"
           >
             <span
-              class="w-5 mr-[10px] text-[#25d366] text-2xl"
+              class="w-5 mr-[10px] text-2xl text-[#25d366]"
             >
               <svg
                 fill="currentColor"
@@ -84,14 +86,16 @@ exports[`Contact > matches snapshot 1`] = `
                 />
               </svg>
             </span>
-            +34 653 83 82 63
+            <span>
+              +34 653 83 82 63
+            </span>
           </a>
         </li>
         <li
           class="flex items-center my-5"
         >
           <span
-            class="w-5 mr-[10px] text-[#181716] text-2xl"
+            class="w-5 mr-[10px] text-2xl text-[#181716]"
           >
             <svg
               fill="currentColor"
@@ -107,7 +111,9 @@ exports[`Contact > matches snapshot 1`] = `
               />
             </svg>
           </span>
-          Jueves a Domingo: 13:00 - 16:00
+          <span>
+            Jueves a Domingo: 13:00 - 16:00
+          </span>
         </li>
         <li
           class="flex items-center my-5"
@@ -120,7 +126,7 @@ exports[`Contact > matches snapshot 1`] = `
             target="_blank"
           >
             <span
-              class="w-5 mr-[10px] text-[#db4437] text-2xl"
+              class="w-5 mr-[10px] text-2xl text-[#db4437]"
             >
               <svg
                 fill="currentColor"
@@ -137,9 +143,13 @@ exports[`Contact > matches snapshot 1`] = `
                 />
               </svg>
             </span>
-            Calle Francisco Salzillo 22, Abanilla
-            <br />
-             Murcia, 30640
+            <span>
+              Calle Francisco Salzillo 22, Abanilla
+              <br />
+            </span>
+            <span>
+              Murcia, 30640
+            </span>
           </a>
         </li>
       </ul>
