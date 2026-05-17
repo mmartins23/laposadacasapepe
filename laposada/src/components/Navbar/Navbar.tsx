@@ -35,7 +35,7 @@ const Navbar = (): JSX.Element => {
     >
       <span className="cursor-pointer">
         <Link to="Hero" smooth={true} offset={-260} duration={500}>
-          <img src="/assets/favicon.svg" alt="La Posada Casa Pepe" className="h-14 w-auto" />
+          <img src="/assets/favicon.svg" alt="La Posada Casa Pepe" className="h-10 w-auto brightness-0 invert" />
         </Link>
       </span>
 
