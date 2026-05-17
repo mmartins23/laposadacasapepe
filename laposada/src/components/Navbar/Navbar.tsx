@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { MdOutlineFoodBank, MdOutlineWhatsapp } from 'react-icons/md'
+import { MdOutlineWhatsapp } from 'react-icons/md'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Link } from 'react-scroll'
 import useSticky from '@/hooks/useSticky'
@@ -35,7 +35,7 @@ const Navbar = (): JSX.Element => {
     >
       <span className="cursor-pointer">
         <Link to="Hero" smooth={true} offset={-260} duration={500}>
-          <MdOutlineFoodBank size={64} />
+          <img src="/assets/favicon.svg" alt="La Posada Casa Pepe" className="h-14 w-auto" />
         </Link>
       </span>
 
