@@ -1,6 +1,7 @@
 import { MdMenuBook, MdOutlineArrowCircleRight } from 'react-icons/md'
 import bgImage from '@/assets/laposada_background.jpeg'
 import laPosadaMenu from '@/assets/laPosadaMenu.pdf'
+import { config } from '@/config'
 
 const Hero = (): JSX.Element => {
   return (
@@ -22,7 +23,7 @@ const Hero = (): JSX.Element => {
             <MdMenuBook />
           </button>
         </a>
-        <a href="https://wa.me/34653838263" target="_blank" rel="noopener noreferrer">
+        <a href={config.whatsappUrl} target="_blank" rel="noopener noreferrer">
           <button className="flex items-center gap-2 bg-secondary text-[#212121] uppercase px-[25px] py-[14px] text-base rounded-[30px] border-0 cursor-pointer transition-all duration-300 hover:text-white hover:bg-transparent hover:border hover:border-secondary">
             Reserva Mesa
             <MdOutlineArrowCircleRight />

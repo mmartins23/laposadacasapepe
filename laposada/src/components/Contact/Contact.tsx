@@ -2,20 +2,21 @@ import type { ContactEntry } from '@/types'
 import msgIcon from '@/assets/msg-icon.png'
 import { SiFacebook, SiWhatsapp, SiGooglemaps } from 'react-icons/si'
 import { IoMdClock } from 'react-icons/io'
+import { config } from '@/config'
 
 const CONTACT_ENTRIES: ContactEntry[] = [
   {
     Icon: SiFacebook,
     iconClass: 'text-[#1877f2]',
     lines: ['Restaurante La Posada'],
-    href: 'https://www.facebook.com/profile.php?id=100063636669626',
+    href: config.facebookUrl,
     ariaLabel: 'Visita nuestra página de Facebook - Restaurante La Posada',
   },
   {
     Icon: SiWhatsapp,
     iconClass: 'text-[#25d366]',
     lines: ['+34 653 83 82 63'],
-    href: 'https://wa.me/34653838263',
+    href: config.whatsappUrl,
     ariaLabel: 'Enviar un mensaje por WhatsApp al +34 653 83 82 63',
   },
   {
@@ -27,7 +28,7 @@ const CONTACT_ENTRIES: ContactEntry[] = [
     Icon: SiGooglemaps,
     iconClass: 'text-[#db4437]',
     lines: ['Calle Francisco Salzillo 22, Abanilla', 'Murcia, 30640'],
-    href: 'https://maps.app.goo.gl/WQLMBdXU3pHkZJ8h7',
+    href: config.mapsUrl,
     ariaLabel: 'Ver la ubicación en Google Maps - Calle Francisco Salzillo 22, Abanilla, Murcia',
   },
 ]

@@ -3,6 +3,7 @@ import { MdOutlineFoodBank, MdOutlineWhatsapp } from 'react-icons/md'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Link } from 'react-scroll'
 import useSticky from '@/hooks/useSticky'
+import { config } from '@/config'
 
 const NAV_LINKS: { label: string; to: string; offset: number }[] = [
   { label: 'El Restaurante', to: 'El Restaurante', offset: -260 },
@@ -55,7 +56,7 @@ const Navbar = (): JSX.Element => {
           </li>
         ))}
         <li className="block my-6 mx-10 nav:inline-block nav:my-[5px] nav:mx-5">
-          <a href="https://wa.me/34653838263" target="_blank" rel="noopener noreferrer">
+          <a href={config.whatsappUrl} target="_blank" rel="noopener noreferrer">
             <button className="flex items-center gap-1 bg-white text-[#212121] px-3 py-2 text-xs nav:text-base nav:px-3 nav:py-2 rounded-[30px] border-0 cursor-pointer">
               Whats App
               <MdOutlineWhatsapp size={16} color="green" />

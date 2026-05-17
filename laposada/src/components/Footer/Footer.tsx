@@ -1,21 +1,22 @@
 import type { SocialLink } from '@/types'
 import { FaFacebookSquare, FaInstagramSquare, FaTripadvisor } from 'react-icons/fa'
+import { config } from '@/config'
 
 const SOCIAL_LINKS: SocialLink[] = [
   {
-    href: 'https://www.facebook.com/p/Restaurante-La-Posada-100063636669626/',
+    href: config.facebookPageUrl,
     ariaLabel: 'Visita nuestra página de Facebook - Restaurante La Posada',
     Icon: FaFacebookSquare,
     hoverClass: 'hover:text-[#1877f2]',
   },
   {
-    href: 'https://www.instagram.com/laposadacasapepe/',
+    href: config.instagramUrl,
     ariaLabel: 'Visita nuestra cuenta de Instagram - La Posada Casa Pepe',
     Icon: FaInstagramSquare,
     hoverClass: 'hover:text-[#e1306c]',
   },
   {
-    href: 'https://www.tripadvisor.es/Restaurant_Review-g2102293-d6681221-Reviews-La_Posada-Abanilla.html',
+    href: config.tripadvisorUrl,
     ariaLabel: 'Ver opiniones en TripAdvisor - Restaurante La Posada',
     Icon: FaTripadvisor,
     hoverClass: 'hover:text-[#00B300]',
