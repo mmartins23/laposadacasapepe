@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
+import { visualizer } from 'rollup-plugin-visualizer'
 
 export default defineConfig({
   plugins: [
@@ -12,6 +13,12 @@ export default defineConfig({
       jpeg: { quality: 75 },
       png: { quality: 75, speed: 4 },
       webp: { lossless: true },
+    }),
+    visualizer({
+      filename: 'dist/stats.html',
+      open: false,
+      gzipSize: true,
+      brotliSize: true,
     }),
   ],
   resolve: {
