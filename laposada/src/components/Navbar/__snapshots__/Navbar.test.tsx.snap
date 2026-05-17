@@ -11,8 +11,8 @@ exports[`Navbar > matches snapshot 1`] = `
       <a>
         <img
           alt="La Posada Casa Pepe"
-          class="h-16 w-auto brightness-0 invert"
-          src="/assets/favicon.svg"
+          class="h-16 w-auto"
+          src="/src/assets/laposada_logo.svg"
         />
       </a>
     </span>

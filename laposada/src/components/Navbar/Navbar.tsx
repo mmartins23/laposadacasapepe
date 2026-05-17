@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { Link } from 'react-scroll'
 import useSticky from '@/hooks/useSticky'
 import { config } from '@/config'
+import laposadaLogo from '@/assets/laposada_logo.svg'
 
 const NAV_LINKS: { label: string; to: string; offset: number }[] = [
   { label: 'El Restaurante', to: 'El Restaurante', offset: -260 },
@@ -35,7 +36,7 @@ const Navbar = (): JSX.Element => {
     >
       <span className="cursor-pointer">
         <Link to="Hero" smooth={true} offset={-260} duration={500}>
-          <img src="/assets/favicon.svg" alt="La Posada Casa Pepe" className="h-16 w-auto brightness-0 invert" />
+          <img src={laposadaLogo} alt="La Posada Casa Pepe" className="h-16 w-auto" />
         </Link>
       </span>
 
